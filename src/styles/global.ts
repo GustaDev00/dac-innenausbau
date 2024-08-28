@@ -6,7 +6,7 @@ const { desktop1024, desktop1920 } = viewportsBase;
 
 export const GlobalStyles = createGlobalStyle`
   * {
-    font-family: var(--gotham);
+    font-family: var(--hankengrotesk);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: 5px;
-    background-color: ${theme.liverOrgan};
+    background-color: ${theme.red};
     color: ${theme.black};
 
     ${mediaMaxWidth(900)`
@@ -23,11 +23,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${theme.oriolesOrange};
+    background-color: ${theme.carnelian};
     border-radius: 20px;
 
     &:hover {
-      background-color: ${theme.oriolesOrange};
+      background-color: ${theme.carnelian};
     }
   }
 
