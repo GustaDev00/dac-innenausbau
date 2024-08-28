@@ -13,7 +13,6 @@ export const theme = {
   metallicSilver: "#A6AFB5",
   gainsboro: "#DBDBDB",
   antiFlashWhite: "#F0F0F0",
-  davysGrey: "#545454",
 };
 
 // get the color name in https://www.color-name.com
