@@ -1,5 +1,6 @@
 {
-  "name": "Dac Innenausbau",
+  "name": "dacinnenausbau",
+  "description": "Dac Innenausbau",
   "version": "0.1.0",
   "private": true,
   "scripts": {
