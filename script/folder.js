@@ -16,10 +16,14 @@ const toPascalCase = (str) => {
 };
 
 const folderNamePascalCase = toPascalCase(newFolder);
-const indexContent = `import * as S from "./styles"
+
+const indexContent = `import * as S from "./styles";
+import C from './constants';
+import useAnimation from "./animation";
 
 export const ${folderNamePascalCase} = () => {
-  return <S.${folderNamePascalCase}Container></S.${folderNamePascalCase}Container>;
+  useAnimation();
+  return <S.${folderNamePascalCase}Container>{C.test}</S.${folderNamePascalCase}Container>;
 };
 `;
 
@@ -31,8 +35,20 @@ export const ${folderNamePascalCase}Container = styled.div\`\`;
 const propsContent = `export interface ${folderNamePascalCase}Props {}
 `;
 
+const animationContent = `import gsap from "gsap";
+
+export default () => {};
+`;
+
+const constantsContent = `export default {
+  test: "teste",
+};
+`;
+
 fs.writeFileSync(path.join(fullPath, "index.tsx"), indexContent);
 fs.writeFileSync(path.join(fullPath, "styles.ts"), stylesContent);
 fs.writeFileSync(path.join(fullPath, "props.ts"), propsContent);
+fs.writeFileSync(path.join(fullPath, "animation.ts"), animationContent);
+fs.writeFileSync(path.join(fullPath, "constants.tsx"), constantsContent);
 
-console.log(`Componente criado com sucesso!  '${newFolder}' e arquivos em '${fullPath}'`);
+console.log(`Componente criado com sucesso! '${newFolder}' e arquivos em '${fullPath}'`);
