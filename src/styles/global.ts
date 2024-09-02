@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 import { mediaMaxWidth, viewportsBase } from "@/utils/media-query";
 
-const { desktop1024, desktop1920 } = viewportsBase;
+const { desktop1024, desktop1920, isMobileOrTabletVertical, mobileHorizontal } = viewportsBase;
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -43,12 +43,24 @@ export const GlobalStyles = createGlobalStyle`
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
 
-    @media (max-width: ${desktop1024.width}px) {
-      font-size: calc(100vw / ${desktop1024.width} * 10);
+    @media (max-width: ${desktop1024.width}px)  {
+      font-size: calc(55vw / ${desktop1024.width} * 10);
     }
 
-    ${mediaMaxWidth("mobile")`
-      font-size: calc(100vw / ${414} * 10);
+    ${mediaMaxWidth("isMobileOrTabletVertical")`
+      font-size: calc(100vw / ${isMobileOrTabletVertical.width} * 10);
+      
+      @media (orientation: portrait) {
+        font-size: calc(115vw / ${isMobileOrTabletVertical.width} * 10);
+      }
+    `}
+
+    ${mediaMaxWidth("mobileVerticalHorizontal")`
+      font-size: calc(100vw / ${342} * 10);
+    `}
+
+    ${mediaMaxWidth("mobileHorizontal")`
+      font-size: calc(65vw / ${mobileHorizontal.width} * 10);
     `}
   }
 
