@@ -3,9 +3,15 @@ import { Logo as _Logo } from "@/components/atoms/logo";
 import { Mail as _Mail } from "@/components/atoms/mail";
 import { Phone as _Phone } from "@/components/atoms/phone";
 import { ButtonSwipe } from "@/components/atoms/button-swipe";
+import { mediaMaxWidth } from "@/utils/media-query";
+import { MenuMobile as _MenuMobile } from "@/components/molecules/menu-mobile";
 
 const Wrapper = css`
   padding: 1.5rem 9.4rem;
+
+  ${mediaMaxWidth("mobile")`
+    padding: 1.8rem 2.4rem;
+  `}
 `;
 
 const FlexCenter = css`
@@ -21,16 +27,37 @@ const FlexCenterSpaceBetween = css`
 
 export const Header = styled.header`
   position: relative;
-  margin-bottom: 6.4rem;
+  margin-bottom: 6.2rem;
+  z-index: 10;
+
+  ${mediaMaxWidth("mobile")`
+    margin-bottom: 4.8rem;
+    height: 9.6rem;
+  `}
 `;
 
 export const Container = styled.div`
   ${Wrapper}
 
   ${FlexCenterSpaceBetween}
+
+  ${({ theme }) => mediaMaxWidth("mobile")`
+    width: 100%;
+    position: fixed;
+    background: ${theme.white};
+    z-index: 20;
+  `}
 `;
 
 export const Logo = styled(_Logo)``;
+
+export const MenuMobile = styled(_MenuMobile)`
+  display: none;
+
+  ${mediaMaxWidth("mobile")`
+    display: block;
+  `}
+`;
 
 export const Nav = styled.nav`
   width: 100%;
@@ -52,6 +79,10 @@ export const List = styled.ul`
   ${FlexCenter}
 
   gap: 2.6rem;
+
+  ${mediaMaxWidth("mobile")`
+    display: none;
+  `}
 `;
 
 const selectedStyles = css`
@@ -95,6 +126,10 @@ export const InfoContact = styled.div`
   ${FlexCenter}
 
   gap: 2.6rem;
+
+  ${mediaMaxWidth("mobile")`
+    gap: 1.4rem;
+  `}
 `;
 
 export const Mail = styled(_Mail)`
@@ -103,4 +138,8 @@ export const Mail = styled(_Mail)`
 
 export const Phone = styled(_Phone)``;
 
-export const Contact = styled(ButtonSwipe)``;
+export const Contact = styled(ButtonSwipe)`
+  ${mediaMaxWidth("mobile")`
+    display: none;
+  `}
+`;
