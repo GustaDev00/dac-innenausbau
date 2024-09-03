@@ -3,6 +3,8 @@ import "styled-components";
 export const theme = {
   black: "#000",
   white: "#fff",
+  white05: "rgba(255, 255, 255, 0.5)",
+  white01: "rgba(255, 255, 255, 0.1)",
   carnelian: "#AE1717",
   red: "#C30606",
   smokyBlack: "#0E0E0E",

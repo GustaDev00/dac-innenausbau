@@ -23,13 +23,13 @@ import useAnimation from "./animation";
 
 export const ${folderNamePascalCase} = () => {
   useAnimation();
-  return <S.${folderNamePascalCase}Container>{C.test}</S.${folderNamePascalCase}Container>;
+  return <S.${folderNamePascalCase}>{C.test}</S.${folderNamePascalCase}>;
 };
 `;
 
 const stylesContent = `import styled from "styled-components";
 
-export const ${folderNamePascalCase}Container = styled.div\`\`;
+export const ${folderNamePascalCase} = styled.div\`\`;
 `;
 
 const propsContent = `export interface ${folderNamePascalCase}Props {}
