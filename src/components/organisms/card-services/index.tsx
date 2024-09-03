@@ -12,12 +12,15 @@ export const CardServices = ({ items }: { items: Array<any> }) => {
         arrow={false}
         items={items}
         renderContent={({ title, description, href }, index, isActive, duration) => (
-          <S.Article key={index}>
+          <S.Article key={index} $active={isActive}>
             <S.Wrapper>
               <S.Title>{title}</S.Title>
               <S.Description>{description}</S.Description>
               <S.Link href={href}>
-                Learn more <S.Arrow />
+                Learn more
+                <S.Icon>
+                  <S.Arrow />
+                </S.Icon>
               </S.Link>
             </S.Wrapper>
             <S.ProgressBar duration={duration} isActive={isActive} color="white" />
