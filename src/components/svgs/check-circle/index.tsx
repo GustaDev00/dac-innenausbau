@@ -1,4 +1,4 @@
-const CheckCircle = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
+export const CheckCircle = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
     className={className}
     width="27"

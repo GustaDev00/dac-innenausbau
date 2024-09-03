@@ -1,8 +1,13 @@
 "use client";
 
-import { type FC } from "react";
-import * as S from "./styles";
+import { Nav } from "../shared/nav";
+import Header from "./header";
 
-export const HomeTemplate: FC = () => {
-  return <S.Home>Hochwertige Bauarbeiten</S.Home>;
+export const HomeTemplate = () => {
+  return (
+    <Nav>
+      <Header />
+      <div style={{ height: "180vh" }}>HOME</div>
+    </Nav>
+  );
 };
