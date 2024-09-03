@@ -31,8 +31,8 @@ export const Header = styled.header`
   z-index: 10;
 
   ${mediaMaxWidth("mobile")`
-    margin-bottom: 4.8rem;
-    height: 9.6rem;
+      margin-bottom: 4.4rem;
+      height: 9rem;
   `}
 `;
 
