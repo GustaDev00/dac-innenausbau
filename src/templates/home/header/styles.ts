@@ -14,6 +14,13 @@ export const Wrapper = styled(_Wrapper)`
   justify-content: space-between;
   align-items: end;
   padding: 15rem 9.4rem 11.8rem;
+
+  ${mediaMaxWidth("mobile")`
+    padding: 4.2rem 2.4rem 4.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4.2rem;
+  `}
 `;
 
 export const Article = styled.article`
@@ -31,6 +38,12 @@ export const Title = styled.h1`
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`
     font-size: 4rem;
+  `}
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 3.8rem;
+    line-height: 121.053%;
+    letter-spacing: -.1923rem;
   `}
 `;
 

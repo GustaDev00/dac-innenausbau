@@ -1,10 +1,15 @@
+import styled, { css } from "styled-components";
+import { mediaMaxWidth } from "@/utils/media-query";
 import { ProgressBar as _ProgressBar } from "@/components/atoms/progress-bar";
 import { CardSlide } from "@/components/molecules/card-slide";
 import { ShortArrowRight } from "@/components/svgs/short-arrow-right";
-import styled, { css } from "styled-components";
 
 export const CardServices = styled.div`
   background: ${({ theme }) => theme.red};
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+  `}
 `;
 
 export const Slide = styled(CardSlide)``;
@@ -38,6 +43,12 @@ export const Title = styled.h2`
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.172rem;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 3.2rem;
+    line-height: 106.25%;
+    letter-spacing: -0.1619rem;
+  `}
 `;
 
 export const Description = styled.p`
