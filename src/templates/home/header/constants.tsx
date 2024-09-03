@@ -27,7 +27,7 @@ export default {
 
   items: [
     {
-      title: <>Trockenbau</>,
+      title: <>Trockenbau 1</>,
       description: (
         <>
           Wände und Deckenmontage: <CustomBr byViewport="mobile" />
@@ -41,7 +41,7 @@ export default {
       href: "/",
     },
     {
-      title: <>Trockenbau</>,
+      title: <>Trockenbau 2</>,
       description: (
         <>
           Wände und Deckenmontage: <CustomBr byViewport="mobile" />
@@ -55,7 +55,7 @@ export default {
       href: "/",
     },
     {
-      title: <>Trockenbau</>,
+      title: <>Trockenbau 3</>,
       description: (
         <>
           Wände und Deckenmontage: <CustomBr byViewport="mobile" />
