@@ -1,3 +1,4 @@
+import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const MailPhone = styled.a`
@@ -10,4 +11,9 @@ export const MailPhone = styled.a`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 1.2rem;
+    line-height: 116.667%;
+  `}
 `;

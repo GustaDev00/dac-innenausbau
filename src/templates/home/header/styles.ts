@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ButtonTransparent } from "@/components/atoms/button-transparent";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { CardServices } from "@/components/organisms/card-services";
+import { mediaMaxWidth } from "@/utils/media-query";
 
 export const Header = styled.section`
   background: url("./imgs/home/header/header.png") no-repeat;
@@ -27,6 +28,10 @@ export const Title = styled.h1`
   font-weight: 700;
   line-height: 116.667%;
   letter-spacing: -0.2429rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    font-size: 4rem;
+  `}
 `;
 
 export const Description = styled.p`

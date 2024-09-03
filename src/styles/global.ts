@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
 import { mediaMaxWidth, viewportsBase } from "@/utils/media-query";
 
-const { desktop1024, desktop1920, isMobileOrTabletVertical, mobileHorizontal } = viewportsBase;
+const { desktop1024, isMobileOrTabletVertical, mobileHorizontal } = viewportsBase;
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -19,6 +19,10 @@ export const GlobalStyles = createGlobalStyle`
 
     ${mediaMaxWidth(900)`
       width: 4px;
+    `}
+
+    ${mediaMaxWidth("mobile")`
+      width: 0px;
     `}
   }
 
@@ -60,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
     `}
 
     ${mediaMaxWidth("mobileHorizontal")`
-      font-size: calc(65vw / ${mobileHorizontal.width} * 10);
+      font-size: calc(100vw / ${414} * 10);
     `}
   }
 
@@ -69,6 +73,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   main {
+    overflow: hidden;
     overflow-y: auto;
   }
 

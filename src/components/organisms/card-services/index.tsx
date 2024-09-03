@@ -1,10 +1,7 @@
 import * as S from "./styles";
-import useAnimation from "./animation";
 import { CardServicesProps } from "./props";
 
-export const CardServices = ({ items }: { items: Array<any> }) => {
-  console.log(items);
-
+export const CardServices = ({ items }: CardServicesProps) => {
   return (
     <S.CardServices>
       <S.Slide
