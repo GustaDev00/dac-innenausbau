@@ -9,7 +9,6 @@ export const HomeTemplate = () => {
     <Nav>
       <Header />
       <WhyChooseUs />
-      <div style={{ height: "100vh" }} />
     </Nav>
   );
 };
