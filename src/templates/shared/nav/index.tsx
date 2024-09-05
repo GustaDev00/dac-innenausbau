@@ -3,6 +3,7 @@ import * as S from "./styles";
 import { ResponsiveElement } from "@/utils/responsive-element";
 import { NavDesktop } from "./desktop";
 import { NavMobile } from "./mobile";
+import { Footer } from "../footer";
 
 export const Nav = ({ children }: { children: ReactNode }) => {
   return (
@@ -17,6 +18,8 @@ export const Nav = ({ children }: { children: ReactNode }) => {
       </S.Header>
 
       {children}
+
+      <Footer />
     </>
   );
 };
