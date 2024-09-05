@@ -1,6 +1,5 @@
 import * as S from "./styles";
 import { ProgressBarProps } from "./props";
-import { useEffect, useState } from "react";
 import useAnimation from "./animation";
 
 export const ProgressBar = ({

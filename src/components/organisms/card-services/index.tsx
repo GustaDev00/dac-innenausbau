@@ -1,13 +1,17 @@
 import * as S from "./styles";
 import { CardServicesProps } from "./props";
+import useAnimation from "@/components/atoms/use-in-view/animation";
 
 export const CardServices = ({ items }: CardServicesProps) => {
+  const { ref, isInView } = useAnimation();
+
   return (
-    <S.CardServices>
+    <S.CardServices ref={ref}>
       <S.Slide
         duration={8}
         arrow={false}
         items={items}
+        start={isInView}
         renderContent={({ title, description, href }, index, isActive, duration) => (
           <S.Article key={index} $active={isActive}>
             <S.Wrapper>

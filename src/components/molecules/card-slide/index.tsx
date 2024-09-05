@@ -1,24 +1,26 @@
 import { useEffect, useMemo, useState } from "react";
 import { CardSlideProps } from "./props";
 import * as S from "./styles";
-// import useAnimation from "./animation";
 
 export const CardSlide = ({
   arrow,
   items,
   renderContent,
   left = false,
+  start,
   duration = 10,
 }: CardSlideProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
+    if (!start) return;
+
     const timer = setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
     }, duration * 1000);
 
     return () => clearInterval(timer);
-  }, [currentIndex, items.length, duration]);
+  }, [currentIndex, items.length, duration, start]);
 
   const renderedItems = useMemo(
     () =>
