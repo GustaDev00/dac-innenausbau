@@ -5,7 +5,7 @@ import { CardServices } from "@/components/organisms/card-services";
 import { mediaMaxWidth } from "@/utils/media-query";
 
 export const Header = styled.section`
-  background: url("./imgs/home/header/header.png") no-repeat;
+  background: url("./imgs/home/header/header.png") no-repeat center center;
   background-size: cover;
 `;
 
