@@ -26,6 +26,7 @@ const FlexCenterSpaceBetween = css`
 `;
 
 export const Header = styled.header`
+  background: ${({ theme }) => theme.white};
   position: relative;
   margin-bottom: 6.2rem;
   z-index: 10;

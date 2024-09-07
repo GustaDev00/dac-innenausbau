@@ -73,6 +73,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   main {
+    background: ${theme.ghostWhite};
     overflow: hidden;
     overflow-y: auto;
   }

@@ -5,7 +5,7 @@ import { NavDesktop } from "./desktop";
 import { NavMobile } from "./mobile";
 import { Footer } from "../footer";
 
-export const Nav = ({ children }: { children: ReactNode }) => {
+export default ({ children }: { children: ReactNode }) => {
   return (
     <>
       <S.Header>
