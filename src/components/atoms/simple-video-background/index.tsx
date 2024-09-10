@@ -9,6 +9,7 @@ const SimpleVideoBackground = ({ src, type }: SimpleVideoBackgroundProps) => {
         autoPlay
         loop
         muted
+        playsInline
         style={{
           position: "absolute",
           width: "100%",
