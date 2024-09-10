@@ -8,6 +8,8 @@ export const LocalVideo = styled.div`
 
 export const Video = styled.video``;
 
+export const FallbackImage = styled.div``;
+
 export const Shadow = styled.div`
   position: absolute;
   width: 100%;

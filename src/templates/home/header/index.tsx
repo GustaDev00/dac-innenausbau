@@ -4,7 +4,11 @@ import SimpleVideoBackground from "@/components/atoms/simple-video-background";
 
 export default () => (
   <S.Header>
-    <SimpleVideoBackground src="/videos/background.mp4" type="video/mp4" />
+    <SimpleVideoBackground
+      src="/videos/background.mp4"
+      type="video/mp4"
+      fallbackImage="/videos/thumb.png"
+    />
     <S.Wrapper>
       <S.Article>
         <S.Title>{C.title}</S.Title>
