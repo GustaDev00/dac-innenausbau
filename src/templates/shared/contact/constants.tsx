@@ -10,8 +10,14 @@ export default {
       </>
     ),
     img: {
-      src: "/imgs/contact/img.png",
-      alt: "Kontakt",
+      desktop: {
+        src: "/imgs/contact/img.png",
+        alt: "Kontakt",
+      },
+      mobile: {
+        src: "/imgs/contact/mobile/img.png",
+        alt: "Kontakt",
+      },
     },
     Certificate: {
       src: "/imgs/contact/quality.png",

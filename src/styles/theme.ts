@@ -3,6 +3,7 @@ import "styled-components";
 export const theme = {
   black: "#000",
   black02: "rgba(0, 0, 0, 0.2)",
+  black05: "rgba(0, 0, 0, 0.05)",
   black25: "rgba(0, 0, 0, 0.25)",
   black07: "rgba(0, 0, 0, 0.07)",
   white: "#fff",
@@ -24,6 +25,7 @@ export const theme = {
   gainsboro: "#DBDBDB",
   antiFlashWhite: "#F0F0F0",
   davysGrey: "#545454",
+  philippineBrown: "#661616",
 };
 
 // get the color name in https://www.color-name.com

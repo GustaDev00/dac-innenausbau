@@ -13,30 +13,40 @@ export const Contact = styled.section`
     content: "";
     display: block;
     position: absolute;
-    background: url("/imgs/footer.png") no-repeat center center;
+    background: url("/imgs/contact/bg.png") no-repeat center center;
     background-size: contain;
     height: 100%;
-    width: 100%;
+    width: calc(100% - 18.8rem);
+    left: 9.4rem;
+    top: -3.7rem;
     z-index: 1;
 
     ${mediaMaxWidth("mobile")`
-      background-size: 400%;
-      background-position: -2% -5%;
+      width: 100%;
+      background-position: 10%;
+      background-size: 305%;
+      top: -39.8rem;
+      left: 4rem;
     `}
   }
 `;
 
 export const Wrapper = styled(_Wrapper)`
-  position: relative;
   flex-direction: row;
-  gap: 10.2rem;
+  align-items: flex-end;
+  gap: 13.2rem;
   z-index: 2;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 5rem;
+  `}
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 2.8rem;
 
   svg path {
     fill: ${({ theme }) => theme.carnelian};
@@ -48,6 +58,10 @@ export const Title = styled.h2`
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 113%;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 3.8rem;
+  `}
 `;
 
 export const ShowImage = styled.div`
@@ -63,6 +77,11 @@ export const Certificate = styled.div`
   right: -3rem;
   top: 50%;
   transform: translate(0%, -50%);
+
+  ${mediaMaxWidth("mobile")`
+    top: 75%;
+    right: -1rem;
+  `}
 `;
 
 export const CertificateImage = styled(LazyImage)`
@@ -80,7 +99,7 @@ export const Text = styled.p`
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2.6rem;
+  gap: 2rem;
 `;
 
 export const Mail = styled(_Mail)`
@@ -114,7 +133,7 @@ export const Form = styled.form`
   padding: 3.2rem 2.2rem;
   background: ${({ theme }) => theme.white};
   border-radius: 0.4rem;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid ${({ theme }) => theme.black05};
   box-shadow: 0rem 0.8rem 2.4rem 0rem ${({ theme }) => theme.black07};
   display: flex;
   flex-direction: column;
@@ -123,6 +142,7 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
+  width: 93.6%;
   color: ${({ theme }) => theme.black};
   font-size: 1.8rem;
   font-weight: 400;

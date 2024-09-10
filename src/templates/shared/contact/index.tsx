@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import C from "./constants";
+import { ResponsiveElement } from "@/utils/responsive-element";
 
 export default () => {
   return (
@@ -12,7 +13,10 @@ export default () => {
             <S.Phone icon />
           </S.Info>
           <S.ShowImage>
-            <S.Image {...C.content.img} />
+            <ResponsiveElement
+              breakpoints={{ mobile: <S.Image {...C.content.img.mobile} /> }}
+              content={<S.Image {...C.content.img.desktop} />}
+            />
             <S.Certificate>
               <S.CertificateImage {...C.content.Certificate} />
             </S.Certificate>

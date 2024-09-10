@@ -1,8 +1,10 @@
 import * as S from "./styles";
 import C from "./constants";
+import SimpleVideoBackground from "@/components/atoms/simple-video-background";
 
 export default () => (
   <S.Header>
+    <SimpleVideoBackground src="/videos/background.mp4" type="video/mp4" />
     <S.Wrapper>
       <S.Article>
         <S.Title>{C.title}</S.Title>
