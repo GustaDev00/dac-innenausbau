@@ -60,11 +60,11 @@ export const GlobalStyles = createGlobalStyle`
     `}
 
     ${mediaMaxWidth("mobileVerticalHorizontal")`
-      font-size: calc(100vw / ${342} * 10);
+      font-size: calc(100vw / ${360} * 10);
     `}
 
     ${mediaMaxWidth("mobileHorizontal")`
-      font-size: calc(100vw / ${360} * 10);
+      font-size: calc(100vw / ${400} * 10);
     `}
   }
 
