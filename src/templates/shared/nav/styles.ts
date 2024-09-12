@@ -114,8 +114,8 @@ export const Item = styled.li<{ $selected: boolean }>`
     transition: width 0.4s ease;
   }
 
-  &:hover {
-    ${selectedStyles}
+  &:hover::before {
+    width: calc(100% + 2.6rem);
   }
 
   ${({ $selected }) => $selected && selectedStyles}

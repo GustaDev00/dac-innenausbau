@@ -17,7 +17,12 @@ export default () => {
             ))}
           </S.List>
         </S.Container>
-        <S.years>{C.years}</S.years>
+        <S.years>
+          {C.years}
+          <S.BordLines1 />
+          <S.BordLines2 />
+          <S.BordLines3 />
+        </S.years>
       </S.Wrapper>
     </S.AboutUs>
   );

@@ -1,6 +1,7 @@
 import { ButtonTransparent } from "@/components/atoms/button-transparent";
 import { DetailsUs as _DetailsUs } from "@/components/atoms/details-us";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
+import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const AboutUs = styled.section`
@@ -23,8 +24,14 @@ export const AboutUs = styled.section`
   }
 
   &::after {
-    background: url("/imgs/home/about-us/shadow.png") no-repeat center center;
+    background: url("/imgs/home/about-us/shadow.png") no-repeat bottom;
     background-size: cover;
+
+    ${mediaMaxWidth("mobile")`
+      background: url("/imgs/home/about-us/mobile/shadow.png") no-repeat bottom;
+      background-size: cover;
+      background-position: 0 100%;
+    `}
   }
 `;
 
@@ -32,11 +39,141 @@ export const Wrapper = styled(_Wrapper)`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
+  ${mediaMaxWidth("mobile")`
+    padding: 4.2rem 1rem 8.2rem 2.4rem;
+    flex-direction: column-reverse;
+  `}
 `;
 
 export const Container = styled.div``;
 
+export const BordLines1 = styled.div`
+  width: 16.165rem;
+  height: 16.165rem;
+  position: absolute;
+  border-radius: 50%;
+  border: 2rem solid ${({ theme }) => theme.carnelian05};
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  animation: scaleFadeFirstCircle 5s linear infinite;
+
+  @keyframes scaleFadeFirstCircle {
+    0% {
+      width: 16.165rem;
+      height: 16.165rem;
+      border: 2rem solid ${({ theme }) => theme.carnelian05};
+      opacity: 1;
+    }
+
+    25% {
+      width: 19.0049rem;
+      height: 19.0049rem;
+      border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+      opacity: 0.3;
+    }
+
+    50% {
+      width: 22.5rem;
+      height: 22.5rem;
+      border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+      opacity: 0;
+    }
+
+    75% {
+      width: 10rem;
+      height: 10rem;
+      border: 2rem solid ${({ theme }) => theme.carnelian05};
+      opacity: 0;
+    }
+  }
+`;
+
+export const BordLines2 = styled.div`
+  width: 19.0049rem;
+  height: 19.0049rem;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+  opacity: 0.3;
+  animation: scaleFadeSecondCircle 5s linear infinite;
+
+  @keyframes scaleFadeSecondCircle {
+    0% {
+      width: 19.0049rem;
+      height: 19.0049rem;
+      border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+      opacity: 0.3;
+    }
+
+    25% {
+      width: 22.5rem;
+      height: 22.5rem;
+      border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+      opacity: 0;
+    }
+
+    50% {
+      width: 10rem;
+      height: 10rem;
+      border: 2rem solid ${({ theme }) => theme.carnelian05};
+      opacity: 0;
+    }
+
+    75% {
+      width: 16.165rem;
+      height: 16.165rem;
+      border: 2rem solid ${({ theme }) => theme.carnelian05};
+      opacity: 1;
+    }
+  }
+`;
+
+export const BordLines3 = styled.div`
+  width: 22.5rem;
+  height: 22.5rem;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+  opacity: 0.1;
+  animation: scaleFadeThirdCircle 5s linear infinite;
+
+  @keyframes scaleFadeThirdCircle {
+    0% {
+      width: 22.5rem;
+      height: 22.5rem;
+      border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+      opacity: 0;
+    }
+
+    25% {
+      width: 10rem;
+      height: 10rem;
+      border: 2rem solid ${({ theme }) => theme.carnelian05};
+      opacity: 0;
+    }
+
+    50% {
+      width: 16.165rem;
+      height: 16.165rem;
+      border: 2rem solid ${({ theme }) => theme.carnelian05};
+      opacity: 1;
+    }
+
+    75% {
+      width: 19.0049rem;
+      height: 19.0049rem;
+      border: 0.4rem solid ${({ theme }) => theme.philippineBrown};
+      opacity: 0.3;
+    }
+  }
+`;
+
 export const years = styled.div`
+  position: relative;
+  top: 4rem;
   display: flex;
   flex-direction: column;
   color: ${({ theme }) => theme.white};
@@ -44,7 +181,7 @@ export const years = styled.div`
   font-family: var(--inter);
   font-size: 3.8rem;
   font-weight: 700;
-  background: ${({ theme }) => theme.philippineBrown};
+  background: ${({ theme }) => theme.carnelian};
   width: 12.233rem;
   height: 12.233rem;
   display: flex;
@@ -56,6 +193,11 @@ export const years = styled.div`
     font-size: 1.4rem;
     font-weight: 300;
   }
+
+  ${mediaMaxWidth("mobile")`
+    top: 2rem;
+    margin: 0rem 4.6rem;
+  `}
 `;
 
 export const TitleButton = styled.div`
@@ -73,6 +215,13 @@ export const TitleButton = styled.div`
     background: ${({ theme }) => theme.white};
     bottom: -4.6rem;
   }
+
+  ${mediaMaxWidth("mobile")`
+    margin-top: 7rem;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+  `}
 `;
 
 export const Title = styled.h2`
@@ -81,6 +230,12 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 116.667%;
   letter-spacing: -0.2429rem;
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 3.8rem;
+    line-height: 131.579%;
+    letter-spacing: -0.1923rem;
+  `}
 `;
 
 export const Button = styled(ButtonTransparent)``;
@@ -91,12 +246,17 @@ export const Description = styled.p`
   font-weight: 400;
   line-height: 133.333%;
   letter-spacing: -0.0002rem;
-  margin: 4.2rem 0;
+  padding: 4.2rem 0;
 `;
 
 export const List = styled.div`
   display: flex;
   gap: 5.2rem;
+
+  ${mediaMaxWidth("mobile")`
+    flex-direction: column;
+    gap: 3rem;
+  `}
 `;
 
 export const item = styled(_DetailsUs)``;

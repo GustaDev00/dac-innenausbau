@@ -7,8 +7,28 @@ export default {
   },
   categories: [
     { title: "Home", href: "/" },
-    { title: "Dienstleistungen", href: "/services/" },
-    { title: "Über uns", href: "/about-us/" },
-    { title: "Kontakt", href: "/contact/" },
+    { title: "Dienstleistungen", href: "/dienstleistungen/" },
+    { title: "Über uns", href: "/uber-uns/" },
+    { title: "Kontakt", href: "/kontakt/" },
+  ],
+  services: [
+    {
+      title: "Baukompetenz",
+      text: (
+        <>
+          Über 22 Jahre Spitzenleistungen <br />
+          im Bauwesen
+        </>
+      ),
+    },
+    {
+      title: "All-in-One-Service",
+      text: (
+        <>
+          Umfassende Dienstleistungen <br />
+          aus einer Hand
+        </>
+      ),
+    },
   ],
 };

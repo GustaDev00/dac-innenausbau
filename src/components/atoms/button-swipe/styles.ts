@@ -8,7 +8,7 @@ const swipeStyles = css`
   gap: 2.4rem;
   padding: 1rem 2.3rem 1rem 3.3rem;
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(174, 23, 23, 1) 65%);
-  background-size: 600%;
+  background-size: 900%;
   background-position: right;
   color: ${({ theme }) => theme.white};
   font-size: 1.6rem;

@@ -4,7 +4,7 @@ import { HomeTemplate } from "@/templates/home";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Description Home",
+  description: "Home",
 };
 
 const Home = (): ReactNode => {

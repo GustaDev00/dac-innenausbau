@@ -1,4 +1,5 @@
 import { CustomBr } from "@/components/atoms/custom-br";
+import C from "@/constants";
 
 export default {
   title: (
@@ -28,24 +29,5 @@ export default {
       <span>Jahre</span>
     </>
   ),
-  moreAbour: [
-    {
-      title: "Baukompetenz",
-      text: (
-        <>
-          Über 22 Jahre Spitzenleistungen <br />
-          im Bauwesen
-        </>
-      ),
-    },
-    {
-      title: "All-in-One-Service",
-      text: (
-        <>
-          Umfassende Dienstleistungen <br />
-          aus einer Hand
-        </>
-      ),
-    },
-  ],
+  moreAbour: C.services,
 };
