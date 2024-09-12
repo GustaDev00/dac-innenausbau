@@ -38,6 +38,7 @@ export const ServicesMobile = () => {
                       setActiveService(id);
                       servicesListRef.current?.scrollIntoView({ behavior: "smooth" });
                     }}
+                    $active={id === activeService}
                   >
                     {text}
                     <S.ArrowMenu />

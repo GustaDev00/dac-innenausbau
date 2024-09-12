@@ -77,6 +77,7 @@ export const Description = styled.p`
 `;
 
 export const List = styled.ul`
+  width: fit-content;
   display: flex;
   flex-direction: column;
 `;
@@ -86,12 +87,22 @@ export const ListItem = styled.li`
   gap: 2.4rem;
   align-items: center;
   padding: 2.4rem 4.4rem;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
 
   ${mediaMaxWidth("mobile")`
     flex-direction: column;
     align-items: flex-start;
     padding: 2.4rem 3.0rem 2.4rem 4.4rem;
   `}
+
+  &:not(:last-child) {
+    border-bottom: 0.1rem dashed ${({ theme }) => theme.black15};
+  }
+
+  &:hover {
+    background: ${({ theme }) => theme.white};
+    box-shadow: 0rem 0.4rem 1.6rem 0rem rgba(0, 0, 0, 0.1);
+  }
 `;
 
 export const Icon = styled(LazyImage)`

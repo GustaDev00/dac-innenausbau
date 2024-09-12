@@ -10,9 +10,9 @@ export default () => {
 
     gsap.to(headerRef.current, {
       scrollTrigger: {
-        trigger: "html",
+        trigger: "main",
         start: `${heightStart + 1}px top`,
-        end: "bottom top",
+        end: "bottom+=3000 top",
         toggleClass: {
           targets: navRef.current,
           className: "fixed",

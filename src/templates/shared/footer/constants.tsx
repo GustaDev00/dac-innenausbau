@@ -7,7 +7,12 @@ export default {
     text: "Copyright © 2024 DAC Innenausbau GmbH ",
     agency: (
       <>
-        Mit 💚 entwickelt von <span>FiberWeb.ch</span>
+        Mit 💚 entwickelt von{" "}
+        <span>
+          <a href="https://www.fiberweb.ch/" target="_blank" rel="noreferrer">
+            FiberWeb.ch
+          </a>
+        </span>
       </>
     ),
   },

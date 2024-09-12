@@ -11,6 +11,21 @@ export const GSAPInitializer = (): null => {
     ScrollTrigger.defaults({
       scroller: "main",
     });
+
+    let previousHeight = document.body.scrollHeight;
+    const checkChangeHeight = (): void => {
+      const currentHeight = document.body.scrollHeight;
+
+      console.log("previousHeight", previousHeight, currentHeight);
+      if (previousHeight !== currentHeight) {
+        ScrollTrigger.refresh();
+        previousHeight = currentHeight;
+      }
+
+      window.requestAnimationFrame(checkChangeHeight);
+    };
+
+    checkChangeHeight();
   }, []);
 
   return null;

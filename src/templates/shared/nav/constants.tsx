@@ -1,6 +1,10 @@
 import C from "@/constants";
+import { text } from "stream/consumers";
 
 export default {
-  contact: "Kontakt",
+  contact: {
+    href: "/kontakt",
+    title: "Kontakt",
+  },
   links: C.categories,
 };

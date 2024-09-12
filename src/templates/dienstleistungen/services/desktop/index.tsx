@@ -32,7 +32,7 @@ export const ServicesDesktop = () => {
             <S.ItemsMenu>
               {C.menu.items.map(({ text, id }) => (
                 <S.ItemMenu key={id}>
-                  <S.ButtonMenu onClick={() => setActiveService(id)}>
+                  <S.ButtonMenu onClick={() => setActiveService(id)} $active={id === activeService}>
                     {text}
                     <S.ArrowMenu />
                   </S.ButtonMenu>

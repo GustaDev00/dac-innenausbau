@@ -20,10 +20,6 @@ export default () => {
     });
   }, []);
 
-  useEffect(() => {
-    console.log(isInView);
-  }, [isInView]);
-
   return {
     ref,
     isInView,

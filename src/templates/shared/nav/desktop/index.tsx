@@ -11,7 +11,7 @@ export const NavDesktop = () => {
     <>
       <S.Container ref={headerRef}>
         <S.Logo />
-        <S.Contact>{C.contact}</S.Contact>
+        <S.Contact {...C.contact}>{C.contact.title}</S.Contact>
       </S.Container>
 
       <S.Nav ref={navRef}>

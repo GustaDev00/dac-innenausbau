@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { LazyImage } from "@/components/atoms/lazy-image";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { Phone } from "@/components/svgs/phone";
@@ -20,6 +20,7 @@ export const Sidebar = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  width: 40%;
 
   ${mediaMaxWidth("desktop1024")`
     width: 60%;
@@ -36,7 +37,7 @@ ${mediaMaxWidth("mobile")`
 
 export const Menu = styled.nav`
   display: flex;
-  padding: 2.8rem 2.4rem;
+  padding: 2.8rem 2rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.8rem;
@@ -67,18 +68,18 @@ export const ItemMenu = styled.li`
 
 export const ArrowMenu = styled(Arrow)``;
 
-export const ButtonMenu = styled.button`
+export const ButtonMenu = styled.button<{ $active: boolean }>`
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 2rem;
+  padding: 1.8rem 2rem 1.8rem 4rem;
   transition: background 0.4s ease;
 
   &::before {
     position: absolute;
-    left: 0.5rem;
+    left: 2rem;
     display: block;
     content: "";
     width: 0.5rem;
@@ -89,6 +90,12 @@ export const ButtonMenu = styled.button`
   &:hover {
     background: ${({ theme }) => theme.brightGray};
   }
+
+  ${({ $active }) =>
+    $active &&
+    css`
+      background: ${({ theme }) => theme.brightGray};
+    `}
 `;
 
 export const Contact = styled.div`
