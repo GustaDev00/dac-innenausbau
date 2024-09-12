@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { LazyImage } from "../lazy-image";
 import { Star as _Star } from "@/components/svgs/star";
 
 export const DetailsUs = styled.div``;
@@ -20,7 +19,7 @@ export const ShowImg = styled.div`
   border-radius: 50%;
 `;
 
-export const Img = styled(LazyImage)``;
+export const Article = styled.article``;
 
 export const Title = styled.h3`
   color: ${({ theme }) => theme.white};

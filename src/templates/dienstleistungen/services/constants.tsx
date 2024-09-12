@@ -1,6 +1,5 @@
 import { CustomBr } from "@/components/atoms/custom-br";
 import C from "@/constants";
-import { item } from "@/templates/home/about-us/styles";
 
 export default {
   menu: {
@@ -42,8 +41,78 @@ export default {
     },
   },
   content: {
-    img: {},
-    items: [],
+    img: {
+      desktop: {
+        src: "/imgs/dienstleistungen/services.png",
+        alt: "Services",
+      },
+      mobile: {
+        src: "/imgs/dienstleistungen/mobile/services.png",
+        alt: "Services",
+      },
+    },
+    items: [
+      {
+        id: 1,
+        title: "Trockenbau",
+        list: [
+          "Wände und Deckenmontage: Professionelle Installation von Trennwänden und abgehängten Decken für eine optimale Raumaufteilung.",
+          "Brandschutzlösungen: Montage von brandschutzgerechten Trockenbausystemen gemäss den aktuellen Sicherheitsvorschriften.",
+          "Schallschutz: Implementierung von schallisolierenden Trockenbauelementen für mehr Ruhe und Komfort in Wohn- und Geschäftsräumen.",
+          "Indirekte Beleuchtung: Integration von Beleuchtungssystemen in Decken und Wände für ein modernes und angenehmes Raumklima.",
+        ],
+      },
+      {
+        id: 2,
+        title: "Gartenbau",
+        list: [
+          "Individuelle Gartengestaltung: Entwicklung und Umsetzung von maßgeschneiderten Gartenkonzepten, die Ihren persönlichen Stil widerspiegeln.",
+          "Pflanzen- und Baumarbeiten: Auswahl, Pflanzung und Pflege von Bäumen, Sträuchern und Blumenbeeten.",
+          "Wege und Terrassenbau: Professioneller Bau von Gartenwegen, Terrassen und Sitzplätzen für eine harmonische Gartengestaltung.",
+          "Wasserinstallationen: Anlage von Teichen, Brunnen und Bewässerungssystemen für eine entspannte und natürliche Atmosphäre.",
+        ],
+      },
+      {
+        id: 3,
+        title: "Kernsanierung",
+        list: [
+          "Entkernung von Gebäuden: Fachgerechte Entfernung von alten Bauelementen und Vorbereitung für eine umfassende Sanierung.",
+          "Modernisierung von Bädern und Küchen: Komplette Neugestaltung und Modernisierung von sanitären Anlagen und Küchenbereichen.",
+          "Sanierung von Wohn- und Gewerberäumen: Umfassende Renovierung von Wohn- und Geschäftsräumen für eine zeitgemäße Nutzung.",
+          "Wärmedämmung und Energiesanierung: Optimierung der Gebäudeisolierung für höhere Energieeffizienz und geringere Betriebskosten.",
+        ],
+      },
+      {
+        id: 4,
+        title: "Bodenlegen",
+        list: [
+          "Verlegung von Holzfußböden: Installation von Parkett, Dielen und Laminat für eine warme und natürliche Wohnatmosphäre.",
+          "Fliesenarbeiten: Fachmännische Verlegung von Fliesen in Bädern, Küchen und Wohnräumen für ein langlebiges und pflegeleichtes Finish.",
+          "Teppichbodenverlegung: Auswahl und Verlegung von Teppichböden für eine gemütliche und schalldämmende Raumgestaltung.",
+          "Bodenreparaturen und -ausbesserungen: Reparatur beschädigter Böden und Ausbesserung von Unebenheiten für eine makellose Oberfläche.",
+        ],
+      },
+      {
+        id: 5,
+        title: "Stuckarbeiten",
+        list: [
+          "Stuck an Decken und Wänden: Anbringung von dekorativen Stuckelementen für ein klassisches und elegantes Ambiente.",
+          "Restaurierung historischer Stuckarbeiten: Fachgerechte Restaurierung und Konservierung von alten Stuckarbeiten, um den historischen Charme zu erhalten.",
+          "Moderne Stucktechniken: Einsatz innovativer Techniken zur Gestaltung moderner Stuckelemente nach individuellen Wünschen.",
+          "Kreative Wand- und Deckengestaltung: Schaffung einzigartiger Wand- und Deckengestaltungen durch kreative Kombinationen von Stuck und Farbe.",
+        ],
+      },
+      {
+        id: 6,
+        title: "Malerarbeiten",
+        list: [
+          "Innenraumgestaltung: Professionelle Farbauswahl und Anstrich von Wänden und Decken für eine stilvolle und harmonische Inneneinrichtung.",
+          "Fassadenanstriche: Wetterfeste und langlebige Anstriche für Fassaden, die Gebäude optisch aufwerten und schützen.",
+          "Lackierarbeiten: Hochwertige Lackierung von Türen, Fenstern und anderen Holzelementen für eine glatte und langlebige Oberfläche.",
+          "Dekorative Maltechniken: Anwendung spezieller Maltechniken wie Wisch-, Tupf- oder Spachteltechniken für einzigartige Oberflächeneffekte.",
+        ],
+      },
+    ],
     services: C.services,
   },
 };
