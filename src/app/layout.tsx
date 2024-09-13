@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 import { fontNames } from "@/styles/fonts";
 import { StyledComponentsRegistry } from "@/lib/registry";
@@ -25,7 +25,9 @@ const RootLayout = ({
           <ThemeProvider theme={theme}>
             <GlobalStyles />
             <GSAPInitializer />
-            <main>{children}</main>
+            <main>
+              <Suspense>{children}</Suspense>
+            </main>
           </ThemeProvider>
         </StyledComponentsRegistry>
       </body>
