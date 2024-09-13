@@ -24,54 +24,28 @@ export default {
     ),
     items: [
       {
-        desktop: {
-          src: "imgs/uber-uns/gallery/slider/img1.png",
-          alt: "img1",
-        },
-        mobile: {
-          src: "imgs/uber-uns/gallery/slider/mobile/img1.png",
-          alt: "img1",
-        },
+        src: "imgs/uber-uns/gallery/slider/img1.jpg",
+        alt: "img1",
       },
       {
-        desktop: {
-          src: "imgs/uber-uns/gallery/slider/img1.png",
-          alt: "img1",
-        },
-        mobile: {
-          src: "imgs/uber-uns/gallery/slider/mobile/img1.png",
-          alt: "img1",
-        },
+        src: "imgs/uber-uns/gallery/slider/img2.jpg",
+        alt: "img2",
       },
       {
-        desktop: {
-          src: "imgs/uber-uns/gallery/slider/img1.png",
-          alt: "img1",
-        },
-        mobile: {
-          src: "imgs/uber-uns/gallery/slider/mobile/img1.png",
-          alt: "img1",
-        },
+        src: "imgs/uber-uns/gallery/slider/img3.jpg",
+        alt: "img3",
       },
       {
-        desktop: {
-          src: "imgs/uber-uns/gallery/slider/img1.png",
-          alt: "img1",
-        },
-        mobile: {
-          src: "imgs/uber-uns/gallery/slider/mobile/img1.png",
-          alt: "img1",
-        },
+        src: "imgs/uber-uns/gallery/slider/img4.jpg",
+        alt: "img4",
       },
       {
-        desktop: {
-          src: "imgs/uber-uns/gallery/slider/img1.png",
-          alt: "img1",
-        },
-        mobile: {
-          src: "imgs/uber-uns/gallery/slider/mobile/img1.png",
-          alt: "img1",
-        },
+        src: "imgs/uber-uns/gallery/slider/img5.jpg",
+        alt: "img5",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/img6.jpg",
+        alt: "img6",
       },
     ],
   },

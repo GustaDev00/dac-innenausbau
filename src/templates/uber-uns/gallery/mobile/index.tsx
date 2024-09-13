@@ -24,7 +24,7 @@ export const GalleryMobile = () => (
     >
       {C.slider.items.map((item, index) => (
         <SwiperSlide key={index}>
-          <S.Img {...item.mobile} />
+          <S.Img {...item} />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -227,9 +227,10 @@ export const ServicesList = styled.div`
 export const Service = styled.div<{ $active?: boolean }>`
   position: absolute;
   top: 0;
+  transform: ${({ $active }) => ($active ? "translateX(0)" : "translateX(100%)")};
   opacity: ${({ $active }) => ($active ? 1 : 0)};
   visibility: ${({ $active }) => ($active ? "visible" : "hidden")};
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
   text-align: left;
 
   &:nth-child(1) {

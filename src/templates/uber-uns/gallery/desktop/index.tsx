@@ -24,7 +24,7 @@ export const GalleryDesktop = () => (
     >
       {C.slider.items.map((item, index) => (
         <SwiperSlide key={index}>
-          <S.Img {...item.desktop} />
+          <S.Img {...item} />
         </SwiperSlide>
       ))}
     </Swiper>
