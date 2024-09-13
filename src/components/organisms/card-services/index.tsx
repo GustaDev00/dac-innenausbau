@@ -15,10 +15,12 @@ export const CardServices = ({ items }: CardServicesProps) => {
         renderContent={({ title, description, href }, index, isActive, duration) => (
           <S.Article key={index} $active={isActive}>
             <S.Wrapper>
-              <S.Title>{title}</S.Title>
-              <S.Description>{description}</S.Description>
+              <S.Content>
+                <S.Title>{title}</S.Title>
+                <S.Description>{description}</S.Description>
+              </S.Content>
               <S.Link href={href}>
-                Learn more
+                Erfahren Sie mehr
                 <S.Icon>
                   <S.Arrow />
                 </S.Icon>

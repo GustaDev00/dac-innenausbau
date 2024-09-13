@@ -22,18 +22,6 @@ export default {
   },
   contact: {
     title: "Kontakt Informationen",
-    list: [
-      <>Nummer: {C.phone}</>,
-      <>E-mail: {C.mail}</>,
-      <>
-        <span>Folge uns</span>
-        <a href={C.links.face} target="_blank" rel="noreferrer">
-          <Facebook />
-        </a>
-        <a href={C.links.insta} target="_blank" rel="noreferrer">
-          <Instagram />
-        </a>
-      </>,
-    ],
+    list: [<>Nummer: {C.phone}</>, <>E-mail: {C.mail}</>, C.socialShare],
   },
 };

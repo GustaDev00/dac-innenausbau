@@ -11,6 +11,10 @@ export const ProgressBar = ({
 }: ProgressBarProps) => {
   const { progressRef } = useAnimation({ isActive, duration });
 
+  if (!isActive) {
+    return <></>;
+  }
+
   return (
     <S.ProgressBarContainer className={className} $color={colorContainer}>
       <S.ProgressFill ref={progressRef} $color={color} />

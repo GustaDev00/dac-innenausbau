@@ -6,7 +6,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  trailingSlash: true,
+  trailingSlash: false,
   swcMinify: true,
 
   webpack: (config, { isServer }) => {

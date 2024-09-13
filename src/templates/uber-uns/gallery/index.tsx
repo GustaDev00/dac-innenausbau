@@ -3,10 +3,13 @@ import C from "./constants";
 import { ResponsiveElement } from "@/utils/responsive-element";
 import { GalleryDesktop } from "./desktop";
 import { GalleryMobile } from "./mobile";
+import Animation from "@/components/atoms/animation";
 
 export default () => {
+  const { sectionRef } = Animation();
+
   return (
-    <S.Gallery>
+    <S.Gallery ref={sectionRef}>
       <S.Hook {...C.img} />
       <S.Wrapper>
         <S.Article>

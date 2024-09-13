@@ -2,8 +2,10 @@ import { useMemo, useState, useRef } from "react";
 import { ResponsiveElement } from "@/utils/responsive-element";
 import * as S from "../styles";
 import C from "../constants";
+import Animation from "@/components/atoms/animation";
 
 export const ServicesMobile = () => {
+  const { sectionRef } = Animation();
   const [activeService, setActiveService] = useState(1);
   const servicesListRef = useRef<HTMLDivElement>(null);
 
@@ -25,7 +27,7 @@ export const ServicesMobile = () => {
   }, [activeService]);
 
   return (
-    <S.Services>
+    <S.Services ref={sectionRef}>
       <S.Wrapper>
         <S.Sidebar>
           <S.Menu>

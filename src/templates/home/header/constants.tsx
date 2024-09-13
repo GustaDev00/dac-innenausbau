@@ -22,12 +22,12 @@ export default {
 
   button: {
     text: "Kontaktieren Sie uns",
-    link: "/contact",
+    link: "/kontakt",
   },
 
   items: [
     {
-      title: <>Trockenbau 1</>,
+      title: <>Trockenbau</>,
       description: (
         <>
           Wände und Deckenmontage: <CustomBr byViewport="mobile" />
@@ -38,35 +38,57 @@ export default {
           Raumaufteilung.
         </>
       ),
-      href: "/",
+      href: "/dienstleistungen?id=1",
     },
     {
-      title: <>Trockenbau 2</>,
+      title: <>Gartenbau</>,
       description: (
         <>
-          Wände und Deckenmontage: <CustomBr byViewport="mobile" />
-          Professionelle <CustomBr byViewport="desktop" />
-          Installation von <CustomBr byViewport="mobile" />
-          Trennwänden und abgehängten <br />
-          Decken für eine optimale <CustomBr byViewport="mobile" />
-          Raumaufteilung.
+          Individuelle Gartengestaltung: Entwicklung und Umsetzung von massgeschneiderten
+          Gartenkonzepten, die Ihren persönlichen Stil widerspiegeln.
         </>
       ),
-      href: "/",
+      href: "/dienstleistungen?id=2",
     },
     {
-      title: <>Trockenbau 3</>,
+      title: <>Kernsanierung</>,
       description: (
         <>
-          Wände und Deckenmontage: <CustomBr byViewport="mobile" />
-          Professionelle <CustomBr byViewport="desktop" />
-          Installation von <CustomBr byViewport="mobile" />
-          Trennwänden und abgehängten <br />
-          Decken für eine optimale <CustomBr byViewport="mobile" />
-          Raumaufteilung.
+          Entkernung von Gebäuden: Fachgerechte Entfernung von alten Bauelementen und Vorbereitung
+          für eine umfassende Sanierung.
         </>
       ),
-      href: "/",
+      href: "/dienstleistungen?id=3",
+    },
+    {
+      title: <>Bodenlegen</>,
+      description: (
+        <>
+          Stuck an Decken und Wänden: Anbringung von dekorativen Stuckelementen für ein klassisches
+          und elegantes Ambiente.
+        </>
+      ),
+      href: "/dienstleistungen?id=4",
+    },
+    {
+      title: <>Stuckarbeiten</>,
+      description: (
+        <>
+          Fassadengestaltung: Professionelle Verkleidung und Dämmung von Fassaden für eine
+          energieeffiziente und ästhetische Gebäudehülle.
+        </>
+      ),
+      href: "/dienstleistungen?id=5",
+    },
+    {
+      title: <>Malerarbeiten</>,
+      description: (
+        <>
+          Innenraumgestaltung: Professionelle Farbauswahl und Anstrich von Wänden und Decken für
+          eine stilvolle und harmonische Inneneinrichtung.
+        </>
+      ),
+      href: "/dienstleistungen?id=6",
     },
   ],
 };

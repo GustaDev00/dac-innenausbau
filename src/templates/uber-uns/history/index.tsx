@@ -1,9 +1,12 @@
 import * as S from "./styles";
 import C from "./constants";
+import Animation from "@/components/atoms/animation";
 
 export default () => {
+  const { sectionRef } = Animation();
+
   return (
-    <S.History>
+    <S.History ref={sectionRef}>
       <S.Wrapper>
         <S.Container>
           <S.Img {...C.img} />

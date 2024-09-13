@@ -33,12 +33,16 @@ export const Header = styled.header`
 
   ${mediaMaxWidth("mobile")`
       margin-bottom: 4.4rem;
-      height: 9rem;
+      height: 6rem;
   `}
 `;
 
 export const Container = styled.div`
-  ${Wrapper}
+  padding: 1.5rem 9.4rem;
+
+  ${mediaMaxWidth("mobile")`
+    padding: 0rem 2.4rem;
+  `}
 
   ${FlexCenterSpaceBetween}
 

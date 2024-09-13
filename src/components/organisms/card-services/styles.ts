@@ -20,6 +20,11 @@ export const Article = styled.div<{ $active: boolean }>`
   visibility: hidden;
   z-index: 0;
   transition: opacity 0.8s ease, visibility 0.8s ease, z-index 0.8s ease;
+  height: 32rem;
+  width: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   ${({ $active }) =>
     $active &&
@@ -32,6 +37,14 @@ export const Article = styled.div<{ $active: boolean }>`
 
 export const Wrapper = styled.article`
   padding: 2.6rem 3.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  height: 100%;
+  justify-content: space-between;
+`;
+
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.8rem;

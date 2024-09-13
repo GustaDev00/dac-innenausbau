@@ -13,6 +13,7 @@ export const theme = {
   white: "#fff",
   lightGray: "#d4d4d499",
   brightGray: "#EBEEF4",
+  eerieBlackLight: "#1E1E1E",
   eerieBlackHalf: "#191919",
   white05: "rgba(255, 255, 255, 0.5)",
   white01: "rgba(255, 255, 255, 0.1)",

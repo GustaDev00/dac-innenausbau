@@ -91,7 +91,7 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: flex-end;
-  gap: 3rem;
+  gap: 6rem;
   margin-bottom: 2rem;
 
   ${mediaMaxWidth("mobile")`
@@ -112,9 +112,11 @@ export const Group = styled.div`
 `;
 
 export const Img1 = styled(LazyImage)`
+  width: fit-content;
+  height: 31.4rem;
   position: relative;
   top: -2rem;
-  left: 0.5rem;
+  left: 0rem;
 
   ${mediaMaxWidth("mobile")`
     height: 27rem;
@@ -125,8 +127,8 @@ export const Img1 = styled(LazyImage)`
 `;
 
 export const Shadow = styled.div`
-  width: 30rem;
-  height: 31.4rem;
+  width: 27rem;
+  height: 29rem;
   background: ${({ theme }) => theme.carnelian};
   box-shadow: 0rem 0.4rem 1.2rem 0px ${({ theme }) => theme.black15};
 

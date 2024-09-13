@@ -6,16 +6,18 @@ export default ({ duration, isActive }: { duration: number; isActive: boolean })
 
   useEffect(() => {
     if (!isActive) {
-      gsap.set(progressRef.current, { width: "0%" });
+      // gsap.set(progressRef.current, { width: "0%" });
       return;
     }
+
+    gsap.set(progressRef.current, { width: "0%" });
 
     gsap.to(progressRef.current, {
       width: "100%",
       duration,
       ease: "linear",
     });
-  }, [isActive, duration]);
+  }, [isActive, duration, progressRef]);
 
   return { progressRef };
 };

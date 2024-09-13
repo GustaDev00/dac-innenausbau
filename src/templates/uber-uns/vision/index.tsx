@@ -1,10 +1,13 @@
 import * as S from "./styles";
 import C from "./constants";
 import { ResponsiveElement } from "@/utils/responsive-element";
+import Animation from "@/components/atoms/animation";
 
 export default () => {
+  const { sectionRef } = Animation();
+
   return (
-    <S.Vision>
+    <S.Vision ref={sectionRef}>
       <S.Wrapper>
         <ResponsiveElement
           breakpoints={{ mobile: <S.FloatingImage {...C.img.mobile} /> }}

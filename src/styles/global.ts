@@ -35,11 +35,6 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  html, body, #__next {
-    height: 100%;
-    overflow: hidden !important;
-  }
-
   html {
     font-size: calc(100vw / 1366 * 10);
     text-size-adjust: none;
@@ -68,17 +63,8 @@ export const GlobalStyles = createGlobalStyle`
     `}
   }
 
-  html, body, #__next, main {
-    height: 100%;
-  }
-
-  main {
+  main{
     background: ${theme.ghostWhite};
-    overflow: hidden;
-    overflow-y: auto;
-  }
-
-  body {
     overflow-x: hidden;
   }
 
@@ -111,5 +97,9 @@ export const GlobalStyles = createGlobalStyle`
   .grecaptcha-badge {
     visibility: hidden;
     opacity: 0;
+  }
+
+  section{
+    opacity: 1;
   }
 `;

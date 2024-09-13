@@ -1,10 +1,22 @@
 import * as S from "../styles";
 import C from "../constants";
 import { ResponsiveElement } from "@/utils/responsive-element";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import Animation from "@/components/atoms/animation";
+import { useSearchParams } from "next/navigation";
 
 export const ServicesDesktop = () => {
+  const { sectionRef } = Animation();
+  const searchParams = useSearchParams();
   const [activeService, setActiveService] = useState(1);
+
+  useEffect(() => {
+    const search = searchParams.get("id");
+
+    if (Number(search) > 6) return;
+
+    setActiveService(search ? parseInt(search) : 1);
+  }, [searchParams]);
 
   const RenderService = useMemo(() => {
     return (
@@ -24,7 +36,7 @@ export const ServicesDesktop = () => {
   }, [activeService]);
 
   return (
-    <S.Services>
+    <S.Services ref={sectionRef}>
       <S.Wrapper>
         <S.Sidebar>
           <S.Menu>

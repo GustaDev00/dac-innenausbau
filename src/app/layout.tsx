@@ -7,8 +7,11 @@ import { StyledComponentsRegistry } from "@/lib/registry";
 import { theme } from "@/styles/theme";
 import { GlobalStyles } from "@/styles/global";
 import { GSAPInitializer } from "@/components/atoms/gsap-initializer";
+
+import "swiper/css";
 import "swiper/swiper-bundle.css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-cards";
 
 const RootLayout = ({
   children,

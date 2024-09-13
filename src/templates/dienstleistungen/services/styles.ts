@@ -176,6 +176,7 @@ export const Link = styled.a`
   justify-content: flex-start;
   align-items: center;
   gap: 1.2rem;
+  transition: opacity 0.4s ease;
 
   svg {
     width: 1.1rem;
@@ -184,6 +185,10 @@ export const Link = styled.a`
     path {
       fill: ${({ theme }) => theme.white};
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 `;
 
