@@ -8,7 +8,7 @@ export const CardServices = ({ items }: CardServicesProps) => {
   return (
     <S.CardServices ref={ref}>
       <S.Slide
-        duration={1}
+        duration={8}
         arrow={false}
         items={items}
         start={isInView}
