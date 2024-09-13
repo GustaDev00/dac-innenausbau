@@ -1,5 +1,4 @@
 import { useMemo, useState, useRef, useEffect } from "react";
-import { ResponsiveElement } from "@/utils/responsive-element";
 import * as S from "../styles";
 import C from "../constants";
 import Animation from "@/components/atoms/animation";
@@ -22,8 +21,9 @@ export const ServicesMobile = () => {
   const RenderService = useMemo(() => {
     return (
       <S.ServicesList>
-        {C.content.items.map(({ id, title, list }) => (
+        {C.content.items.map(({ id, title, list, img }) => (
           <S.Service key={id} $active={id === activeService}>
+            <S.ServiceImg key={id} {...img} />
             <S.TitleService>{title}</S.TitleService>
             <S.ListService>
               {list.map((text, index) => (
@@ -60,10 +60,6 @@ export const ServicesMobile = () => {
             </S.ItemsMenu>
           </S.Menu>
           <S.Content ref={servicesListRef}>
-            <ResponsiveElement
-              breakpoints={{ mobile: <S.ServiceImg {...C.content.img.mobile} /> }}
-              content={<S.ServiceImg {...C.content.img.desktop} />}
-            />
             {RenderService}
 
             <S.Line />

@@ -25,6 +25,7 @@ export const theme = {
   carnelian05: "rgba(174, 23, 23, 0.15)",
   carnelian00: "rgba(174, 23, 23, 0)",
   red: "#C30606",
+  darkLiver: "#505050",
   licorice: "#1E0D0D",
   smokyBlack: "#0E0E0E",
   raisinBlack: "#202020",

@@ -112,16 +112,15 @@ export const Group = styled.div`
 `;
 
 export const Img1 = styled(LazyImage)`
-  width: fit-content;
   height: 31.4rem;
   position: relative;
+  object-fit: cover;
   top: -2rem;
   left: 0rem;
 
   ${mediaMaxWidth("mobile")`
     height: 27rem;
     width: 20.8rem;
-    object-fit: cover;
     left: -3rem;
   `}
 `;
@@ -146,6 +145,7 @@ export const TagImg = styled.div`
   top: 5.5rem;
   z-index: 1;
   width: fit-content;
+  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;

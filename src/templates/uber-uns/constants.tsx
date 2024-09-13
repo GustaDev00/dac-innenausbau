@@ -9,7 +9,7 @@ export default {
       </>
     ),
     background: {
-      src: "/imgs/uber-uns/background.png",
+      src: "imgs/uber-uns/background.png",
       alt: "Background Header",
     },
     breadcrumb: "Über uns",

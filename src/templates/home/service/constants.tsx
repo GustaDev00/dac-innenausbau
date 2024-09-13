@@ -26,12 +26,12 @@ export default {
   },
   content: {
     imgFirst: {
-      src: "./imgs/home/services/img1.png",
+      src: "imgs/home/services/img1.png",
       alt: "Trockenbau",
     },
     tag: "Qualifizierte Experten",
     imgSecond: {
-      src: "./imgs/home/services/img2.png",
+      src: "imgs/home/services/img2.png",
       alt: "Innenausbau",
     },
   },

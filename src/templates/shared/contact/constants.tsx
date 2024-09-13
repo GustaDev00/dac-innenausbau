@@ -11,16 +11,16 @@ export default {
     ),
     img: {
       desktop: {
-        src: "/imgs/contact/img.png",
+        src: "imgs/contact/img.png",
         alt: "Kontakt",
       },
       mobile: {
-        src: "/imgs/contact/mobile/img.png",
+        src: "imgs/contact/mobile/img.png",
         alt: "Kontakt",
       },
     },
     Certificate: {
-      src: "/imgs/contact/quality.png",
+      src: "imgs/contact/quality.png",
       alt: "Qualität",
     },
     text: (
@@ -31,11 +31,11 @@ export default {
     ),
     clients: [
       {
-        src: "/imgs/contact/implenia.png",
+        src: "imgs/contact/implenia.png",
         alt: "implenia",
       },
       {
-        src: "/imgs/contact/gipser.png",
+        src: "imgs/contact/gipser.png",
         alt: "gipser",
       },
     ],
@@ -53,7 +53,7 @@ export default {
       placeholder: "000 000 00 00",
     },
     {
-      label: "E-Mail",
+      label: "Email",
       type: "email",
       placeholder: "Jhon@gmail.com",
     },

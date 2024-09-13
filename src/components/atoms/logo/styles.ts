@@ -5,6 +5,6 @@ import { mediaMaxWidth } from "@/utils/media-query";
 export const Link = styled.a``;
 
 export const Logo = styled(LazyImage)`
-  width: fit-content;
   height: 6.2rem;
+  object-fit: contain;
 `;

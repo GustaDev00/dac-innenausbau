@@ -1,6 +1,5 @@
 import * as S from "../styles";
 import C from "../constants";
-import { ResponsiveElement } from "@/utils/responsive-element";
 import { useEffect, useMemo, useState } from "react";
 import Animation from "@/components/atoms/animation";
 import { useSearchParams } from "next/navigation";
@@ -21,8 +20,9 @@ export const ServicesDesktop = () => {
   const RenderService = useMemo(() => {
     return (
       <S.ServicesList>
-        {C.content.items.map(({ id, title, list }) => (
+        {C.content.items.map(({ id, title, list, img }) => (
           <S.Service key={id} $active={id === activeService}>
+            <S.ServiceImg key={id} {...img} />
             <S.TitleService>{title}</S.TitleService>
             <S.ListService>
               {list.map((text, index) => (
@@ -60,14 +60,18 @@ export const ServicesDesktop = () => {
                 <S.IconPhone />
                 <S.Call>
                   <S.TitleCall>{C.contact.call.title}</S.TitleCall>
-                  <S.TextCall>{C.contact.call.text}</S.TextCall>
+                  <S.TextCall>
+                    <S.PhoneLink />
+                  </S.TextCall>
                 </S.Call>
               </S.ItemContact>
               <S.ItemContact>
                 <S.IconMail />
                 <S.MailContainer>
                   <S.TitleCall>{C.contact.mail.title}</S.TitleCall>
-                  <S.TextCall>{C.contact.mail.text}</S.TextCall>
+                  <S.TextCall>
+                    <S.MailLink />
+                  </S.TextCall>
                 </S.MailContainer>
               </S.ItemContact>
               <S.ItemContact>
@@ -82,10 +86,6 @@ export const ServicesDesktop = () => {
           </S.Contact>
         </S.Sidebar>
         <S.Content>
-          <ResponsiveElement
-            breakpoints={{ mobile: <S.ServiceImg {...C.content.img.mobile} /> }}
-            content={<S.ServiceImg {...C.content.img.desktop} />}
-          />
           {RenderService}
 
           <S.Line />

@@ -15,7 +15,7 @@ export default {
       </>
     ),
     background: {
-      src: "/imgs/dienstleistungen/bg.png",
+      src: "imgs/dienstleistungen/bg.png",
       alt: "Background Header",
     },
     breadcrumb: "Dienstleistungen",

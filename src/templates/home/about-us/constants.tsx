@@ -21,7 +21,7 @@ export default {
   ),
   button: {
     text: "Mehr dazu",
-    link: "/",
+    link: "/uber-uns",
   },
   years: (
     <>

@@ -98,7 +98,6 @@ export const Position = styled.p`
 `;
 
 export const SignatureImg = styled(LazyImage)`
-  width: fit-content;
   height: 3.8rem;
 `;
 
@@ -128,7 +127,6 @@ export const Container = styled.div`
 
 export const Img = styled(LazyImage)`
   position: relative;
-  width: fit-content;
   height: 61.4rem;
 
   ${mediaMaxWidth("isMobileOrTabletVertical")`

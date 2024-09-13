@@ -4,6 +4,9 @@ import { Star as _Star } from "@/components/svgs/star";
 export const DetailsUs = styled.div``;
 
 export const Star = styled(_Star)`
+  width: 2.5rem;
+  height: 2.5rem;
+
   path {
     fill: ${({ theme }) => theme.white};
   }

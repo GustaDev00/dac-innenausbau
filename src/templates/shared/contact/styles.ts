@@ -85,8 +85,8 @@ export const Certificate = styled.div`
 `;
 
 export const CertificateImage = styled(LazyImage)`
-  width: 100%;
   height: 9.2rem;
+  object-fit: cover;
 `;
 
 export const Text = styled.p`
@@ -116,10 +116,9 @@ export const Clients = styled.div`
 `;
 
 export const Client = styled(LazyImage)`
-  width: 100%;
   height: 9.2rem;
   filter: grayscale(1);
-  opacity: 0.4;
+  opacity: 0.7;
   transition: opacity 0.4s ease, filter 0.4s ease;
 
   &:hover {
@@ -129,7 +128,7 @@ export const Client = styled(LazyImage)`
 `;
 
 export const Form = styled.form`
-  width: 32.3rem;
+  width: 44.3rem;
   padding: 3.2rem 2.2rem;
   background: ${({ theme }) => theme.white};
   border-radius: 0.4rem;
@@ -139,6 +138,10 @@ export const Form = styled.form`
   flex-direction: column;
   gap: 1.6rem;
   align-items: flex-start;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+  `}
 `;
 
 export const Label = styled.label`

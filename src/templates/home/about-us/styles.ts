@@ -38,11 +38,13 @@ export const AboutUs = styled.section`
 export const Wrapper = styled(_Wrapper)`
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10rem;
 
   ${mediaMaxWidth("mobile")`
     padding: 4.2rem 1rem 8.2rem 2.4rem;
     flex-direction: column-reverse;
+    gap: 0;
   `}
 `;
 
@@ -230,6 +232,10 @@ export const Title = styled.h2`
   font-weight: 700;
   line-height: 116.667%;
   letter-spacing: -0.2429rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    font-size: 4rem;
+  `}
 
   ${mediaMaxWidth("mobile")`
     font-size: 3.8rem;

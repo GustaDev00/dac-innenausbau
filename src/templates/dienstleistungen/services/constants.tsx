@@ -43,11 +43,11 @@ export default {
   content: {
     img: {
       desktop: {
-        src: "/imgs/dienstleistungen/services.png",
+        src: "imgs/dienstleistungen/services.png",
         alt: "Services",
       },
       mobile: {
-        src: "/imgs/dienstleistungen/mobile/services.png",
+        src: "imgs/dienstleistungen/mobile/services.png",
         alt: "Services",
       },
     },
@@ -61,6 +61,10 @@ export default {
           "Schallschutz: Implementierung von schallisolierenden Trockenbauelementen für mehr Ruhe und Komfort in Wohn- und Geschäftsräumen.",
           "Indirekte Beleuchtung: Integration von Beleuchtungssystemen in Decken und Wände für ein modernes und angenehmes Raumklima.",
         ],
+        img: {
+          src: "imgs/uber-uns/gallery/slider/img1.jpg",
+          alt: "img1",
+        },
       },
       {
         id: 2,
@@ -71,6 +75,10 @@ export default {
           "Wege und Terrassenbau: Professioneller Bau von Gartenwegen, Terrassen und Sitzplätzen für eine harmonische Gartengestaltung.",
           "Wasserinstallationen: Anlage von Teichen, Brunnen und Bewässerungssystemen für eine entspannte und natürliche Atmosphäre.",
         ],
+        img: {
+          src: "imgs/uber-uns/gallery/slider/img2.jpg",
+          alt: "img2",
+        },
       },
       {
         id: 3,
@@ -81,6 +89,10 @@ export default {
           "Sanierung von Wohn- und Gewerberäumen: Umfassende Renovierung von Wohn- und Geschäftsräumen für eine zeitgemäße Nutzung.",
           "Wärmedämmung und Energiesanierung: Optimierung der Gebäudeisolierung für höhere Energieeffizienz und geringere Betriebskosten.",
         ],
+        img: {
+          src: "imgs/uber-uns/gallery/slider/img3.jpg",
+          alt: "img3",
+        },
       },
       {
         id: 4,
@@ -91,6 +103,10 @@ export default {
           "Teppichbodenverlegung: Auswahl und Verlegung von Teppichböden für eine gemütliche und schalldämmende Raumgestaltung.",
           "Bodenreparaturen und -ausbesserungen: Reparatur beschädigter Böden und Ausbesserung von Unebenheiten für eine makellose Oberfläche.",
         ],
+        img: {
+          src: "imgs/uber-uns/gallery/slider/img4.jpg",
+          alt: "img4",
+        },
       },
       {
         id: 5,
@@ -101,6 +117,10 @@ export default {
           "Moderne Stucktechniken: Einsatz innovativer Techniken zur Gestaltung moderner Stuckelemente nach individuellen Wünschen.",
           "Kreative Wand- und Deckengestaltung: Schaffung einzigartiger Wand- und Deckengestaltungen durch kreative Kombinationen von Stuck und Farbe.",
         ],
+        img: {
+          src: "imgs/uber-uns/gallery/slider/img5.jpg",
+          alt: "img5",
+        },
       },
       {
         id: 6,
@@ -111,6 +131,10 @@ export default {
           "Lackierarbeiten: Hochwertige Lackierung von Türen, Fenstern und anderen Holzelementen für eine glatte und langlebige Oberfläche.",
           "Dekorative Maltechniken: Anwendung spezieller Maltechniken wie Wisch-, Tupf- oder Spachteltechniken für einzigartige Oberflächeneffekte.",
         ],
+        img: {
+          src: "imgs/uber-uns/gallery/slider/img6.jpg",
+          alt: "img6",
+        },
       },
     ],
     services: C.services,

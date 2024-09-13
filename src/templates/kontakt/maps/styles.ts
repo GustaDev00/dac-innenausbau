@@ -92,7 +92,6 @@ export const Text = styled.p``;
 export const Container = styled.div``;
 
 export const Img = styled(LazyImage)`
-  width: fit-content;
   height: 35.6rem;
 
   ${mediaMaxWidth("mobile")`

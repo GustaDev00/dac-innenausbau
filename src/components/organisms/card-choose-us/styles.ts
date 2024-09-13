@@ -79,7 +79,6 @@ export const Wrapper = styled.article`
 export const Content = styled.div``;
 
 export const Img = styled(LazyImage)`
-  width: fit-content;
   height: 7rem;
 `;
 

@@ -27,7 +27,6 @@ export const Wrapper = styled(_Wrapper)``;
 export const FloatingImage = styled(LazyImage)`
   position: absolute;
   right: 0;
-  width: fit-content;
   height: 60.8rem;
 
   ${mediaMaxWidth("mobile")`
@@ -106,8 +105,8 @@ export const ListItem = styled.li`
 `;
 
 export const Icon = styled(LazyImage)`
-  width: fit-content;
   height: 5.6rem;
+  object-fit: contain;
 `;
 
 export const Article = styled.article``;

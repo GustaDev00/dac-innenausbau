@@ -20,7 +20,7 @@ export const CardServices = ({ items }: CardServicesProps) => {
                 <S.Description>{description}</S.Description>
               </S.Content>
               <S.Link href={href}>
-                Erfahren Sie mehr
+                Mehr dazu
                 <S.Icon>
                   <S.Arrow />
                 </S.Icon>

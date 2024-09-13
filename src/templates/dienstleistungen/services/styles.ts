@@ -8,6 +8,8 @@ import { Arrow } from "@/components/svgs/arrow";
 import { mediaMaxWidth } from "@/utils/media-query";
 import { DetailsUs } from "@/components/atoms/details-us";
 import { Title, Text, ShowImg, Article } from "@/components/atoms/details-us/styles";
+import { Mail as _Mail } from "@/components/atoms/mail";
+import { Phone as _Phone } from "@/components/atoms/phone";
 
 export const Services = styled.section``;
 
@@ -20,7 +22,7 @@ export const Sidebar = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  width: 40%;
+  width: 45%;
 
   ${mediaMaxWidth("desktop1024")`
     width: 60%;
@@ -155,16 +157,25 @@ export const TitleCall = styled.h3`
   line-height: 162.5%;
 `;
 
-export const TextCall = styled.p`
+export const TextCall = styled.p``;
+
+export const MailContainer = styled.div``;
+
+export const IconMail = styled(Mail)``;
+
+export const MailLink = styled(_Mail)`
   color: ${({ theme }) => theme.white};
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 162.5%;
 `;
 
-export const MailContainer = styled.div``;
-
-export const IconMail = styled(Mail)``;
+export const PhoneLink = styled(_Phone)`
+  color: ${({ theme }) => theme.white};
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 162.5%;
+`;
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.white};
@@ -218,6 +229,9 @@ export const Content = styled.div`
 
 export const ServiceImg = styled(LazyImage)`
   width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  margin-bottom: 3.8rem;
 `;
 
 export const ServicesList = styled.div`

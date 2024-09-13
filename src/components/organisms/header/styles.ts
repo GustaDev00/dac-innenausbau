@@ -18,6 +18,7 @@ export const Wrapper = styled(_Wrapper)`
 `;
 
 export const Content = styled.div`
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 3.4rem;
@@ -95,7 +96,7 @@ export const Background = styled(LazyImage)`
 
 export const Line = styled.div`
   background: ${({ theme }) => theme.white20};
-  width: 58.9rem;
+  width: 110%;
   height: 0.1rem;
 
   ${mediaMaxWidth("mobile")`
@@ -121,7 +122,7 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.p`
-  color: ${({ theme }) => theme.quickSilver};
+  color: ${({ theme }) => theme.darkLiver};
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 156.25%;

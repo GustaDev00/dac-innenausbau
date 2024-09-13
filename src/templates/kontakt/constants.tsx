@@ -15,7 +15,7 @@ export default {
       </>
     ),
     background: {
-      src: "/imgs/kontakt/bg.png",
+      src: "imgs/kontakt/bg.png",
       alt: "Background Header",
     },
     breadcrumb: "Kontakt",
