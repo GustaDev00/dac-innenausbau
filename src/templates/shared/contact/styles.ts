@@ -128,7 +128,7 @@ export const Client = styled(LazyImage)`
 `;
 
 export const Form = styled.form`
-  width: 44.3rem;
+  width: 40rem;
   padding: 3.2rem 2.2rem;
   background: ${({ theme }) => theme.white};
   border-radius: 0.4rem;
