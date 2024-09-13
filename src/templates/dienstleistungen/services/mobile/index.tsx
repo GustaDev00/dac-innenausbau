@@ -1,13 +1,23 @@
-import { useMemo, useState, useRef } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import { ResponsiveElement } from "@/utils/responsive-element";
 import * as S from "../styles";
 import C from "../constants";
 import Animation from "@/components/atoms/animation";
+import { useSearchParams } from "next/navigation";
 
 export const ServicesMobile = () => {
   const { sectionRef } = Animation();
   const [activeService, setActiveService] = useState(1);
   const servicesListRef = useRef<HTMLDivElement>(null);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const search = searchParams.get("id");
+
+    if (Number(search) > 6) return;
+
+    setActiveService(search ? parseInt(search) : 1);
+  }, [searchParams]);
 
   const RenderService = useMemo(() => {
     return (
