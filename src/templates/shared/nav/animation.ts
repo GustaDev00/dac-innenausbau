@@ -6,7 +6,7 @@ export default () => {
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const heightStart = headerRef?.current?.offsetHeight || 82;
+    const heightStart = headerRef?.current?.offsetHeight || 72;
 
     gsap.to(headerRef.current, {
       scrollTrigger: {

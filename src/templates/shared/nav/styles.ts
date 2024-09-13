@@ -7,7 +7,7 @@ import { mediaMaxWidth } from "@/utils/media-query";
 import { MenuMobile as _MenuMobile } from "@/components/molecules/menu-mobile";
 
 const Wrapper = css`
-  padding: 1.5rem 9.4rem;
+  padding: 1rem 9.4rem;
 
   ${mediaMaxWidth("mobile")`
     padding: 1.8rem 2.4rem;
@@ -28,7 +28,7 @@ const FlexCenterSpaceBetween = css`
 export const Header = styled.header`
   background: ${({ theme }) => theme.white};
   position: relative;
-  margin-bottom: 6.2rem;
+  margin-bottom: 5.4rem;
   z-index: 10;
 
   ${mediaMaxWidth("mobile")`
@@ -38,7 +38,7 @@ export const Header = styled.header`
 `;
 
 export const Container = styled.div`
-  padding: 1.5rem 9.4rem;
+  padding: 1rem 9.4rem;
 
   ${mediaMaxWidth("mobile")`
     padding: 0rem 2.4rem;
@@ -114,7 +114,7 @@ export const Item = styled.li<{ $selected: boolean }>`
     left: -1.3rem;
     height: 0.2rem;
     background: ${({ theme }) => theme.white};
-    bottom: -1.5rem;
+    bottom: -1rem;
     transition: width 0.4s ease;
   }
 

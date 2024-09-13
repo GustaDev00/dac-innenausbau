@@ -6,9 +6,5 @@ export const Link = styled.a``;
 
 export const Logo = styled(LazyImage)`
   width: fit-content;
-  height: 5.8rem;
-
-  ${mediaMaxWidth("mobile")`
-    height: 6.2rem;
-  `}
+  height: 6.2rem;
 `;

@@ -20,7 +20,7 @@ export const Article = styled.div<{ $active: boolean }>`
   visibility: hidden;
   z-index: 0;
   transition: opacity 0.8s ease, visibility 0.8s ease, z-index 0.8s ease;
-  height: 32rem;
+  height: 29rem;
   width: 43rem;
   display: flex;
   flex-direction: column;
