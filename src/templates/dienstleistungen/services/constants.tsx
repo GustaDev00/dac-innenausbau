@@ -3,7 +3,7 @@ import C from "@/constants";
 
 export default {
   menu: {
-    title: "All Services",
+    title: "Alle Dienstleistungen",
     items: [
       { id: 1, text: "Trockenbau" },
       { id: 2, text: "Gartenbau" },
@@ -28,11 +28,11 @@ export default {
       </>
     ),
     call: {
-      title: "Call Us",
+      title: "Ruf uns an",
       text: C.phone,
     },
     mail: {
-      title: "Or mail",
+      title: "Oder mailen",
       text: C.mail,
     },
     link: {

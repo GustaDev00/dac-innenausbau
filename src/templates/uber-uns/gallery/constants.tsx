@@ -5,7 +5,7 @@ export default {
   description: (
     <>
       Unser Motto „Alles ist machbar“ <CustomBr byViewport="mobile" />
-      spiegelt unsere Überzeugung wider,
+      spiegelt unsere Überzeugung wieder,
       <br /> dass jede Bauherausforderung mit der <CustomBr byViewport="mobile" />
       richtigen.
     </>

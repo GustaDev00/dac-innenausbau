@@ -1,12 +1,13 @@
 import * as S from "./styles";
 import C from "./constants";
-import Animation from "@/components/atoms/animation";
+import useAnimation from "@/components/atoms/use-in-view/animation";
+import { CalculatorNumber } from "@/components/atoms/calculator-number";
 
 export default () => {
-  const { sectionRef } = Animation();
+  const { ref, isInView } = useAnimation();
 
   return (
-    <S.AboutUs ref={sectionRef}>
+    <S.AboutUs ref={ref}>
       <S.Wrapper>
         <S.Container>
           <S.TitleButton>
@@ -21,7 +22,8 @@ export default () => {
           </S.List>
         </S.Container>
         <S.years>
-          {C.years}
+          <CalculatorNumber targetNumber={C.years.number} start={isInView} />
+          {C.years.text}
           <S.BordLines1 />
           <S.BordLines2 />
           <S.BordLines3 />

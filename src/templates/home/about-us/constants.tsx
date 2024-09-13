@@ -23,11 +23,9 @@ export default {
     text: "Mehr dazu",
     link: "/uber-uns",
   },
-  years: (
-    <>
-      <b>22</b>
-      <span>Jahre</span>
-    </>
-  ),
+  years: {
+    number: 22,
+    text: <span>Jahre</span>,
+  },
   moreAbour: C.services,
 };

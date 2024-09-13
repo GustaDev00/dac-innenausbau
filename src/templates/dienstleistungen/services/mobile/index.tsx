@@ -78,14 +78,18 @@ export const ServicesMobile = () => {
                 <S.IconPhone />
                 <S.Call>
                   <S.TitleCall>{C.contact.call.title}</S.TitleCall>
-                  <S.TextCall>{C.contact.call.text}</S.TextCall>
+                  <S.TextCall>
+                    <S.PhoneLink />
+                  </S.TextCall>
                 </S.Call>
               </S.ItemContact>
               <S.ItemContact>
                 <S.IconMail />
                 <S.MailContainer>
                   <S.TitleCall>{C.contact.mail.title}</S.TitleCall>
-                  <S.TextCall>{C.contact.mail.text}</S.TextCall>
+                  <S.TextCall>
+                    <S.MailLink />
+                  </S.TextCall>
                 </S.MailContainer>
               </S.ItemContact>
               <S.ItemContact>

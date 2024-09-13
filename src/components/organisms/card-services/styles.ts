@@ -20,11 +20,15 @@ export const Article = styled.div<{ $active: boolean }>`
   visibility: hidden;
   z-index: 0;
   transition: opacity 0.8s ease, visibility 0.8s ease, z-index 0.8s ease;
-  height: 29rem;
+  height: 32rem;
   width: 43rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+  `}
 
   ${({ $active }) =>
     $active &&
@@ -45,6 +49,7 @@ export const Wrapper = styled.article`
 `;
 
 export const Content = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.8rem;

@@ -18,7 +18,7 @@ export default {
         <>
           Unser Motto „Alles ist machbar“ <CustomBr byViewport="mobile" /> spiegelt unsere
           Überzeugung
-          <br /> wider, dass jede
+          <br /> wieder, dass jede
           <CustomBr byViewport="mobile" /> Bauherausforderung mit der{" "}
           <CustomBr byViewport="mobile" />
           richtigen <CustomBr byViewport="desktop" />

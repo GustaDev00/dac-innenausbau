@@ -89,7 +89,21 @@ export const Address = styled.address`
 
 export const Text = styled.p``;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  background: ${({ theme }) => theme.white};
+  box-shadow: 0rem 0.8rem 1.6rem 0rem ${({ theme }) => theme.black12};
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+
+    iframe{
+      width: 100%;
+    }
+      
+  `}
+`;
 
 export const Img = styled(LazyImage)`
   height: 35.6rem;
