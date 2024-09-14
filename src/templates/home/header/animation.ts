@@ -8,7 +8,7 @@ export default () => {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const tl = gsap.timeline({ delay: 0.5 });
+    const tl = gsap.timeline({ delay: 1 });
 
     const title = sectionRef.current.querySelector("#title");
     const description = sectionRef.current.querySelector("#description");

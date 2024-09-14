@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import C from "./constants";
 import { ResponsiveElement } from "@/utils/responsive-element";
-import Animation from "@/components/atoms/animation";
+import Animation from "./animations";
 
 export default () => {
   const { sectionRef } = Animation();

@@ -3,7 +3,7 @@ import C from "./constants";
 import { ResponsiveElement } from "@/utils/responsive-element";
 import { GalleryDesktop } from "./desktop";
 import { GalleryMobile } from "./mobile";
-import Animation from "@/components/atoms/animation";
+import Animation from "./animations";
 
 export default () => {
   const { sectionRef } = Animation();
@@ -16,10 +16,15 @@ export default () => {
           <S.Title>{C.title}</S.Title>
           <S.Description>{C.description}</S.Description>
         </S.Article>
-        <ResponsiveElement
-          breakpoints={{ mobile: <GalleryMobile /> }}
-          content={<GalleryDesktop />}
-        />
+        <S.SliderList data-timeline="gallery">
+          <ResponsiveElement
+            breakpoints={{ mobile: <GalleryMobile /> }}
+            content={<GalleryDesktop />}
+          />
+          <S.TextSlider>
+            <S.Text>Alles ist machbar.</S.Text>
+          </S.TextSlider>
+        </S.SliderList>
       </S.Wrapper>
     </S.Gallery>
   );

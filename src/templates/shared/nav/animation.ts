@@ -26,7 +26,7 @@ export default () => {
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0 });
 
-    tl.fromTo(loadingRef.current, { opacity: 1 }, { opacity: 0, duration: 2 }).to(
+    tl.fromTo(loadingRef.current, { opacity: 1 }, { opacity: 0, duration: 1 }).to(
       loadingRef.current,
       { display: "none", duration: 0 },
       ">",

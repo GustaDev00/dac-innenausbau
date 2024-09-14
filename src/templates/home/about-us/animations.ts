@@ -50,8 +50,6 @@ export default () => {
       );
     });
 
-    console.log(title, button, description, years, details);
-
     return () => {
       tl.kill();
     };

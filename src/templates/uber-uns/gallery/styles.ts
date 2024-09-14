@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 export const Gallery = styled.section`
   position: relative;
+  overflow: hidden;
   border-bottom: 1px solid ${({ theme }) => theme.white25};
   background: ${({ theme }) => theme.eerieBlack};
 
@@ -19,16 +20,79 @@ export const Gallery = styled.section`
     opacity: 0.8;
   }
 `;
+export const SliderList = styled.div`
+  position: relative;
+`;
+
+export const TextSlider = styled.div`
+  width: 100%;
+  position: absolute;
+  color: ${({ theme }) => theme.white};
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 147.368%;
+  letter-spacing: -0.1923rem;
+  bottom: 1rem;
+  z-index: 10;
+  display: flex;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 11.3rem;
+    background: linear-gradient(180deg, rgba(23, 23, 23, 0.45) 0%, #171717 100%);
+    filter: blur(1.45rem);
+    opacity: 1;
+    bottom: -2.6rem;
+    z-index: -1;
+  }
+
+  ${mediaMaxWidth("mobile")`
+    font-size: 2.8rem;
+    line-height: 107.143%;
+    letter-spacing: -.1417rem;
+  `}
+`;
+
+export const Text = styled.p`
+  position: absolute;
+  left: 30rem;
+  bottom: 2rem;
+
+  ${mediaMaxWidth("isMobileOrTabletVertical")`
+    left: 20rem;
+  `}
+
+  ${mediaMaxWidth("mobile")`
+    left: 11rem;
+    width: 40%;
+    text-align: center;
+  `}
+`;
 
 export const Wrapper = styled(_Wrapper)``;
 
 export const Hook = styled(LazyImage)`
   position: absolute;
   right: 3.7rem;
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
 
   ${mediaMaxWidth("mobile")`
     display: none;
   `}
+
+  @keyframes swing {
+    0% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
 `;
 
 export const Article = styled.article`
