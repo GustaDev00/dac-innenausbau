@@ -21,7 +21,7 @@ export default () => {
       scrub: 1,
       onEnter: () => setIsInView(true),
       onLeaveBack: () => setIsInView(false),
-      markers: true,
+      markers: false,
     };
 
     if (window.innerWidth <= 768) {
