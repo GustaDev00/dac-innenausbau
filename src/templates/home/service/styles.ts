@@ -43,6 +43,17 @@ export const Tag = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.4rem;
+  animation: swingTag 4s infinite alternate;
+
+  @keyframes swingTag {
+    to {
+      transform: rotate(-2deg) translateX(5px);
+    }
+
+    from {
+      transform: rotate(2deg) translateX(-5px);
+    }
+  }
 `;
 
 export const Tools = styled(_Tools)``;
@@ -155,12 +166,22 @@ export const TagImg = styled.div`
   border: 1px solid ${({ theme }) => theme.black05};
   background: ${({ theme }) => theme.white};
   box-shadow: 0rem 1.2rem 2.2rem 0rem ${({ theme }) => theme.black12};
+  animation: tagSwing 2s infinite alternate;
 
   ${mediaMaxWidth("mobile")`
     top: unset;
     left: -4.4rem;
     bottom: 1.8rem;
   `}
+
+  @keyframes tagSwing {
+    to {
+      transform: translateX(-2px);
+    }
+    from {
+      transform: translateX(2px);
+    }
+  }
 `;
 
 export const Check = styled(CheckCircle)``;
