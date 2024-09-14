@@ -13,6 +13,7 @@ export default {
   img: {
     src: "imgs/uber-uns/gallery/hook.png",
     alt: "Hook",
+    notLazy: true,
   },
 
   slider: {

@@ -10,7 +10,6 @@ export default () => {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const hook = sectionRef.current.querySelector("img");
     const title = sectionRef.current.querySelector("h2");
     const description = sectionRef.current.querySelector("p");
     const gallery = sectionRef.current.querySelector("[data-timeline=gallery]");
