@@ -6,7 +6,7 @@ export const CardServices = ({ items }: CardServicesProps) => {
   const { ref, isInView } = useAnimation();
 
   return (
-    <S.CardServices ref={ref}>
+    <S.CardServices ref={ref} data-timeline="card-services">
       <S.Slide
         duration={8}
         arrow={false}

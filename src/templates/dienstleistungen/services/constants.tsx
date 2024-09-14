@@ -62,7 +62,7 @@ export default {
           "Indirekte Beleuchtung: Integration von Beleuchtungssystemen in Decken und Wände für ein modernes und angenehmes Raumklima.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/img1.jpg",
+          src: "imgs/uber-uns/gallery/slider/trockenbau.jpg",
           alt: "img1",
         },
       },
@@ -76,7 +76,7 @@ export default {
           "Wasserinstallationen: Anlage von Teichen, Brunnen und Bewässerungssystemen für eine entspannte und natürliche Atmosphäre.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/img2.jpg",
+          src: "imgs/uber-uns/gallery/slider/gartenbau.jpg",
           alt: "img2",
         },
       },
@@ -90,7 +90,7 @@ export default {
           "Wärmedämmung und Energiesanierung: Optimierung der Gebäudeisolierung für höhere Energieeffizienz und geringere Betriebskosten.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/img3.jpg",
+          src: "imgs/uber-uns/gallery/slider/kernsanierung.jpg",
           alt: "img3",
         },
       },
@@ -104,7 +104,7 @@ export default {
           "Bodenreparaturen und -ausbesserungen: Reparatur beschädigter Böden und Ausbesserung von Unebenheiten für eine makellose Oberfläche.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/img4.jpg",
+          src: "imgs/uber-uns/gallery/slider/bodenlegen.png",
           alt: "img4",
         },
       },
@@ -118,7 +118,7 @@ export default {
           "Kreative Wand- und Deckengestaltung: Schaffung einzigartiger Wand- und Deckengestaltungen durch kreative Kombinationen von Stuck und Farbe.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/img5.jpg",
+          src: "imgs/uber-uns/gallery/slider/stuckarbeiten.jpg",
           alt: "img5",
         },
       },
@@ -132,7 +132,7 @@ export default {
           "Dekorative Maltechniken: Anwendung spezieller Maltechniken wie Wisch-, Tupf- oder Spachteltechniken für einzigartige Oberflächeneffekte.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/img6.jpg",
+          src: "imgs/uber-uns/gallery/slider/malerarbeiten.jpg",
           alt: "img6",
         },
       },

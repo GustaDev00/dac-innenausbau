@@ -1,10 +1,10 @@
 import * as S from "./styles";
 import C from "./constants";
 import { ResponsiveElement } from "@/utils/responsive-element";
-import Animation from "@/components/atoms/animation";
+import useAnimation from "./animations";
 
 export default () => {
-  const { sectionRef } = Animation();
+  const { sectionRef } = useAnimation();
 
   return (
     <S.Contact ref={sectionRef}>

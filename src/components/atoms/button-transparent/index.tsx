@@ -6,7 +6,7 @@ export const ButtonTransparent = ({ text, link, className }: ButtonTransparentPr
   useAnimation();
 
   return (
-    <S.Button href={link} title={link} className={className}>
+    <S.Button href={link} title={link} className={className} data-timeline="button">
       <S.Text>{text}</S.Text>
       <S.Icon />
     </S.Button>

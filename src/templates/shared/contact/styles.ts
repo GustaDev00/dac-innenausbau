@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ButtonSwipe } from "@/components/atoms/button-swipe";
 import { LazyImage } from "@/components/atoms/lazy-image";
 import { Mail as _Mail } from "@/components/atoms/mail";
@@ -6,20 +6,32 @@ import { Phone as _Phone } from "@/components/atoms/phone";
 import { Wrapper as _Wrapper } from "@/styles/components/wrapper";
 import { mediaMaxWidth } from "@/utils/media-query";
 
+const moveBackground = keyframes`
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 992% 0px;
+  }
+`;
+
 export const Contact = styled.section`
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";
     display: block;
     position: absolute;
-    background: url("/imgs/contact/bg.png") no-repeat center center;
-    background-size: contain;
-    height: 100%;
-    width: calc(100% - 18.8rem);
-    left: 9.4rem;
-    top: -3.7rem;
+    background: url("/imgs/contact/bg.png") repeat-x;
+    background-size: cover;
+    background-position: 100% 0;
+    height: 90%;
+    width: 100%;
+    left: 0rem;
+    top: 5rem;
     z-index: 1;
+    animation: ${moveBackground} 30s linear infinite;
 
     ${mediaMaxWidth("mobile")`
       width: 100%;

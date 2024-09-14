@@ -24,27 +24,27 @@ export default {
     ),
     items: [
       {
-        src: "imgs/uber-uns/gallery/slider/img1.jpg",
+        src: "imgs/uber-uns/gallery/slider/trockenbau.jpg",
         alt: "img1",
       },
       {
-        src: "imgs/uber-uns/gallery/slider/img2.jpg",
+        src: "imgs/uber-uns/gallery/slider/gartenbau.jpg",
         alt: "img2",
       },
       {
-        src: "imgs/uber-uns/gallery/slider/img3.jpg",
+        src: "imgs/uber-uns/gallery/slider/kernsanierung.jpg",
         alt: "img3",
       },
       {
-        src: "imgs/uber-uns/gallery/slider/img4.jpg",
+        src: "imgs/uber-uns/gallery/slider/bodenlegen.png",
         alt: "img4",
       },
       {
-        src: "imgs/uber-uns/gallery/slider/img5.jpg",
+        src: "imgs/uber-uns/gallery/slider/stuckarbeiten.jpg",
         alt: "img5",
       },
       {
-        src: "imgs/uber-uns/gallery/slider/img6.jpg",
+        src: "imgs/uber-uns/gallery/slider/malerarbeiten.jpg",
         alt: "img6",
       },
     ],

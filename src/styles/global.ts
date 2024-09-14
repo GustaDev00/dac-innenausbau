@@ -13,12 +13,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
     background-color: ${theme.red};
     color: ${theme.black};
 
     ${mediaMaxWidth(900)`
-      width: 4px;
+      width: 0px;
     `}
 
     ${mediaMaxWidth("mobile")`

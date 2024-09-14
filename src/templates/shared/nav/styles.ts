@@ -14,6 +14,16 @@ const Wrapper = css`
   `}
 `;
 
+export const Loading = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: ${({ theme }) => theme.ghostWhite};
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+`;
+
 const FlexCenter = css`
   display: flex;
   align-items: center;

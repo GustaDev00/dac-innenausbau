@@ -4,42 +4,22 @@ import gsap from "gsap";
 
 export default () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const content = useRef<HTMLElement[]>([]);
-  const contentData = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const articles = content.current;
-    const articlesData = contentData.current;
+    if (!sectionRef.current) return;
 
-    if (!section && articles.length <= 0 && articlesData) {
-      return;
-    }
+    const tl = gsap.timeline({ delay: 0.5 });
 
-    gsap.from(section, {
-      y: 20,
-      opacity: 0,
-      duration: 2,
-      ease: "power2.inOut",
-    });
+    const title = sectionRef.current.querySelector("#title");
+    const description = sectionRef.current.querySelector("#description");
+    const button = sectionRef.current.querySelector("[data-timeline='button']");
+    const services = sectionRef.current.querySelector("[data-timeline='card-services']");
 
-    articles.forEach((article, index) => {
-      gsap.from(article, {
-        scrollTrigger: {
-          trigger: articlesData,
-          // markers: true,
-          start: "top 95%",
-          end: "top 70%",
-          scrub: 1,
-        },
-        x: -100,
-        opacity: 0,
-        duration: 2,
-        delay: 0.2 * index,
-        ease: "power2.out",
-      });
-    });
+    tl.fromTo(title, { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 1 })
+      .fromTo(description, { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, "<+=0.2")
+      .fromTo(button, { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, "<+=0.2")
+      .fromTo(services, { y: 100, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, "<");
   }, []);
 
-  return { sectionRef, content, contentData };
+  return { sectionRef };
 };

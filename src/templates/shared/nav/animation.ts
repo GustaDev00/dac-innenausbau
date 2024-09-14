@@ -4,9 +4,10 @@ import gsap from "gsap";
 export default () => {
   const headerRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLDivElement>(null);
+  const loadingRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const heightStart = headerRef?.current?.offsetHeight || 72;
+    const heightStart = headerRef?.current?.offsetHeight ?? 72;
 
     gsap.to(headerRef.current, {
       scrollTrigger: {
@@ -22,5 +23,19 @@ export default () => {
     });
   }, []);
 
-  return { headerRef, navRef };
+  useEffect(() => {
+    const tl = gsap.timeline({ delay: 0 });
+
+    tl.fromTo(loadingRef.current, { opacity: 1 }, { opacity: 0, duration: 2 }).to(
+      loadingRef.current,
+      { display: "none", duration: 0 },
+      ">",
+    );
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  return { headerRef, navRef, loadingRef };
 };
