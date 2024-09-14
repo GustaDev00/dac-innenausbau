@@ -7,6 +7,7 @@ import styled from "styled-components";
 export const AboutUs = styled.section`
   position: relative;
   z-index: 1;
+  overflow: hidden;
 
   &::before,
   &::after {
@@ -24,14 +25,29 @@ export const AboutUs = styled.section`
   }
 
   &::after {
-    background: url("/imgs/home/about-us/shadow.png") no-repeat bottom;
-    background-size: cover;
+    background: url("/imgs/home/about-us/shadow.png") repeat-x;
+    background-size: auto 120%;
+    animation: moveBackground 10s linear infinite;
+
+    ${mediaMaxWidth("isMobileOrTabletVertical")`
+      animation: moveBackground 60s linear infinite;
+    `}
 
     ${mediaMaxWidth("mobile")`
-      background: url("/imgs/home/about-us/mobile/shadow.png") no-repeat bottom;
+      background: url("/imgs/home/about-us/shadow.png") repeat-x;
       background-size: cover;
       background-position: 0 100%;
+      animation: moveBackground 660s linear infinite;
     `}
+  }
+
+  @keyframes moveBackground {
+    from {
+      background-position: 0% 100%;
+    }
+    to {
+      background-position: -2394% 100%;
+    }
   }
 `;
 

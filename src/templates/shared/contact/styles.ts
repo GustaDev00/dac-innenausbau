@@ -35,10 +35,9 @@ export const Contact = styled.section`
 
     ${mediaMaxWidth("mobile")`
       width: 100%;
-      background-position: 10%;
-      background-size: 305%;
-      top: -39.8rem;
-      left: 4rem;
+      height: 50%;
+      top: 5rem;
+      animation: ${moveBackground} 200s linear infinite;
     `}
   }
 `;
@@ -50,6 +49,7 @@ export const Wrapper = styled(_Wrapper)`
   z-index: 2;
 
   ${mediaMaxWidth("mobile")`
+    align-items: flex-start;
     flex-direction: column;
     gap: 5rem;
   `}
@@ -135,7 +135,7 @@ export const Client = styled(LazyImage)`
 
   &:hover {
     filter: grayscale(0);
-    opacity: 1;
+    opacity: 1 !important;
   }
 `;
 

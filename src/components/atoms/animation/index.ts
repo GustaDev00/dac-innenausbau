@@ -14,15 +14,14 @@ const Animation = () => {
         scrollTrigger: {
           trigger: section,
           scrub: 1,
-          start: "top 90%",
+          start: "top+=250px 85%",
           end: "top center",
           markers: false,
         },
-        y: 20,
-        x: -20,
+        y: 40,
+        x: -40,
         opacity: 0,
-        duration: 3,
-        ease: "power2.inOut",
+        duration: 4,
       });
     }
   }, []);

@@ -1,27 +1,27 @@
 import * as S from "./styles";
 import C from "./constants";
-import useAnimation from "@/components/atoms/use-in-view/animation";
 import { CalculatorNumber } from "@/components/atoms/calculator-number";
+import animation from "./animations";
 
 export default () => {
-  const { ref, isInView } = useAnimation();
+  const { sectionRef, isInView } = animation();
 
   return (
-    <S.AboutUs ref={ref}>
+    <S.AboutUs ref={sectionRef}>
       <S.Wrapper>
         <S.Container>
           <S.TitleButton>
-            <S.Title>{C.title}</S.Title>
+            <S.Title className="title">{C.title}</S.Title>
             <S.Button {...C.button} />
           </S.TitleButton>
-          <S.Description>{C.description}</S.Description>
-          <S.List>
+          <S.Description className="description">{C.description}</S.Description>
+          <S.List className="list">
             {C.moreAbour.map(({ title, text }, index) => (
               <S.item key={index} title={title} text={text} />
             ))}
           </S.List>
         </S.Container>
-        <S.years>
+        <S.years className="years">
           <CalculatorNumber targetNumber={C.years.number} start={isInView} />
           {C.years.text}
           <S.BordLines1 />

@@ -3,7 +3,7 @@ import * as S from "./styles";
 
 export const DetailsUs = ({ text, title, className }: DetailsUsProps) => {
   return (
-    <S.DetailsUs className={className}>
+    <S.DetailsUs className={className} data-timeline="details">
       <S.ShowImg>
         <S.Star />
       </S.ShowImg>
