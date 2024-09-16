@@ -7,7 +7,8 @@ export default {
       Unser Motto „Alles ist machbar“ <CustomBr byViewport="mobile" />
       spiegelt unsere Überzeugung wieder,
       <br /> dass jede Bauherausforderung mit der <CustomBr byViewport="mobile" />
-      richtigen.
+      richtigen herangehensweise <CustomBr byViewport="mobile" />
+      gelöst werden kann.
     </>
   ),
   img: {
@@ -25,12 +26,28 @@ export default {
     ),
     items: [
       {
-        src: "imgs/uber-uns/gallery/slider/trockenbau.jpg",
-        alt: "img1",
+        src: "imgs/uber-uns/gallery/slider/1.png",
+        alt: "img1 - png",
       },
       {
-        src: "imgs/uber-uns/gallery/slider/gartenbau.jpg",
-        alt: "img2",
+        src: "imgs/uber-uns/gallery/slider/2.png",
+        alt: "img2 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/3.png",
+        alt: "img3 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/4.png",
+        alt: "img4 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/5.png",
+        alt: "img5 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/trockenbau.jpg",
+        alt: "img1",
       },
       {
         src: "imgs/uber-uns/gallery/slider/kernsanierung.jpg",
@@ -43,10 +60,6 @@ export default {
       {
         src: "imgs/uber-uns/gallery/slider/stuckarbeiten.jpg",
         alt: "img5",
-      },
-      {
-        src: "imgs/uber-uns/gallery/slider/malerarbeiten.jpg",
-        alt: "img6",
       },
     ],
   },

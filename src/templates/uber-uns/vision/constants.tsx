@@ -16,7 +16,7 @@ export default {
     <>
       Mit über zwei Jahrzehnten Erfahrung
       <CustomBr byViewport="mobile" /> und modernster Technologie setzen
-      <CustomBr byViewport="mobile" /> wir Maßstäbe in der
+      <CustomBr byViewport="mobile" /> wir Massstäbe in der
       <CustomBr byViewport="desktop" /> Bauindustrie.
       <CustomBr byViewport="mobile" /> Unsere Vision treibt uns an, die
       <CustomBr byViewport="mobile" /> Zukunft des Bauens zu gestalten.
@@ -42,7 +42,7 @@ export default {
           <CustomBr byViewport="mobile" />
           Ziel: Die Erwartungen unserer <br />
           Kunden stets zu übertreffen und
-          <CustomBr byViewport="mobile" /> neue Maßstäbe in der Bauindustrie
+          <CustomBr byViewport="mobile" /> neue Massstäbe in der Bauindustrie
           <CustomBr byViewport="mobile" /> zu
           <CustomBr byViewport="desktop" /> setzen.
         </>

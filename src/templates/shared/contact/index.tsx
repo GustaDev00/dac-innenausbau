@@ -1,10 +1,33 @@
+import { ResponsiveElement } from "@/utils/responsive-element";
+import { sendMail } from "@/api/send-mail";
 import * as S from "./styles";
 import C from "./constants";
-import { ResponsiveElement } from "@/utils/responsive-element";
 import useAnimation from "./animations";
+import { validations } from "./validations";
+import { SendMailRequest } from "@/api/send-mail/request";
+import { useFormik } from "formik";
 
 export default () => {
   const { sectionRef } = useAnimation();
+
+  const formik = useFormik<SendMailRequest>({
+    initialValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+    validationSchema: validations,
+    onSubmit: async (values) => {
+      console.log(values);
+      try {
+        await sendMail(values);
+        alert("Email enviado com sucesso");
+      } catch (error) {
+        alert("Erro ao enviar email");
+      }
+    },
+  });
 
   return (
     <S.Contact ref={sectionRef}>
@@ -31,18 +54,30 @@ export default () => {
             ))}
           </S.Clients>
         </S.Content>
-        <S.Form>
+        <S.Form onSubmit={formik.handleSubmit}>
           {C.form.map((input, index) => (
-            <S.Label key={index}>
+            <S.Label
+              key={index}
+              $error={Boolean(formik.errors[input.name as keyof SendMailRequest])}
+            >
               <S.TextInput>{input.label}</S.TextInput>
               {input.type === "textarea" ? (
-                <S.TextArea placeholder={input.placeholder} />
+                <S.TextArea
+                  {...formik.getFieldProps(input.name)}
+                  placeholder={input.placeholder}
+                  name={input.name}
+                />
               ) : (
-                <S.Input type={input.type} placeholder={input.placeholder} />
+                <S.Input
+                  {...formik.getFieldProps(input.name)}
+                  type={input.type}
+                  name={input.name}
+                  placeholder={input.placeholder}
+                />
               )}
             </S.Label>
           ))}
-          <S.Button>{C.button}</S.Button>
+          <S.Button type="submit">{C.button}</S.Button>
         </S.Form>
       </S.Wrapper>
     </S.Contact>

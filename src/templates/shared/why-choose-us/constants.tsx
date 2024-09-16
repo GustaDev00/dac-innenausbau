@@ -50,7 +50,7 @@ export default {
         <>
           Unsere Arbeit zeichnet sich durch höchste Qualitätsstandards aus, die sowohl bei kleinen
           <CustomBr byViewport="desktop" />
-          Renovierungen als auch bei großen Bauvorhaben konsequent eingehalten werden.
+          Renovierungen als auch bei grossen Bauvorhaben konsequent eingehalten werden.
         </>
       ),
       img: {

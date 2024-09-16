@@ -17,7 +17,7 @@ export default {
     ),
   },
   categories: {
-    title: "Seiten",
+    title: "Navigation",
     list: C.categories,
   },
   contact: {

@@ -32,7 +32,7 @@ export default {
       text: C.phone,
     },
     mail: {
-      title: "Oder mailen",
+      title: "Schreibe uns ein E-mail",
       text: C.mail,
     },
     link: {
@@ -62,7 +62,7 @@ export default {
           "Indirekte Beleuchtung: Integration von Beleuchtungssystemen in Decken und Wände für ein modernes und angenehmes Raumklima.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/trockenbau.jpg",
+          src: "imgs/dienstleistungen/services/trockenbau.png",
           alt: "img1",
         },
       },
@@ -70,13 +70,13 @@ export default {
         id: 2,
         title: "Gartenbau",
         list: [
-          "Individuelle Gartengestaltung: Entwicklung und Umsetzung von maßgeschneiderten Gartenkonzepten, die Ihren persönlichen Stil widerspiegeln.",
+          "Individuelle Gartengestaltung: Entwicklung und Umsetzung von massgeschneiderten Gartenkonzepten, die Ihren persönlichen Stil widerspiegeln.",
           "Pflanzen- und Baumarbeiten: Auswahl, Pflanzung und Pflege von Bäumen, Sträuchern und Blumenbeeten.",
           "Wege und Terrassenbau: Professioneller Bau von Gartenwegen, Terrassen und Sitzplätzen für eine harmonische Gartengestaltung.",
           "Wasserinstallationen: Anlage von Teichen, Brunnen und Bewässerungssystemen für eine entspannte und natürliche Atmosphäre.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/gartenbau.jpg",
+          src: "imgs/dienstleistungen/services/gartenbau.png",
           alt: "img2",
         },
       },
@@ -86,11 +86,11 @@ export default {
         list: [
           "Entkernung von Gebäuden: Fachgerechte Entfernung von alten Bauelementen und Vorbereitung für eine umfassende Sanierung.",
           "Modernisierung von Bädern und Küchen: Komplette Neugestaltung und Modernisierung von sanitären Anlagen und Küchenbereichen.",
-          "Sanierung von Wohn- und Gewerberäumen: Umfassende Renovierung von Wohn- und Geschäftsräumen für eine zeitgemäße Nutzung.",
+          "Sanierung von Wohn- und Gewerberäumen: Umfassende Renovierung von Wohn- und Geschäftsräumen für eine zeitgemässe Nutzung.",
           "Wärmedämmung und Energiesanierung: Optimierung der Gebäudeisolierung für höhere Energieeffizienz und geringere Betriebskosten.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/kernsanierung.jpg",
+          src: "imgs/dienstleistungen/services/kernsanierung.png",
           alt: "img3",
         },
       },
@@ -98,13 +98,13 @@ export default {
         id: 4,
         title: "Bodenlegen",
         list: [
-          "Verlegung von Holzfußböden: Installation von Parkett, Dielen und Laminat für eine warme und natürliche Wohnatmosphäre.",
+          "Verlegung von Holzfussböden: Installation von Parkett, Dielen und Laminat für eine warme und natürliche Wohnatmosphäre.",
           "Fliesenarbeiten: Fachmännische Verlegung von Fliesen in Bädern, Küchen und Wohnräumen für ein langlebiges und pflegeleichtes Finish.",
           "Teppichbodenverlegung: Auswahl und Verlegung von Teppichböden für eine gemütliche und schalldämmende Raumgestaltung.",
           "Bodenreparaturen und -ausbesserungen: Reparatur beschädigter Böden und Ausbesserung von Unebenheiten für eine makellose Oberfläche.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/bodenlegen.png",
+          src: "imgs/dienstleistungen/services/bodenlegen.png",
           alt: "img4",
         },
       },
@@ -118,7 +118,7 @@ export default {
           "Kreative Wand- und Deckengestaltung: Schaffung einzigartiger Wand- und Deckengestaltungen durch kreative Kombinationen von Stuck und Farbe.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/stuckarbeiten.jpg",
+          src: "imgs/udienstleistungen/servicesder/stuckarbeiten.png",
           alt: "img5",
         },
       },
@@ -132,7 +132,7 @@ export default {
           "Dekorative Maltechniken: Anwendung spezieller Maltechniken wie Wisch-, Tupf- oder Spachteltechniken für einzigartige Oberflächeneffekte.",
         ],
         img: {
-          src: "imgs/uber-uns/gallery/slider/malerarbeiten.jpg",
+          src: "imgs/dienstleistungen/services/malerarbeiten.png",
           alt: "img6",
         },
       },

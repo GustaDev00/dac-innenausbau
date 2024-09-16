@@ -156,7 +156,7 @@ export const Form = styled.form`
   `}
 `;
 
-export const Label = styled.label`
+export const Label = styled.label<{ $error: boolean }>`
   width: 93.6%;
   color: ${({ theme }) => theme.black};
   font-size: 1.8rem;
@@ -165,6 +165,21 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
+
+  ${({ $error, theme }) =>
+    $error &&
+    `
+    color: ${theme.carnelian};
+
+    input, textarea {
+      border-color: ${theme.carnelian};
+      color: ${theme.carnelian};
+
+      &::placeholder {
+        color: ${theme.carnelian};
+      }
+    }
+  `}
 `;
 
 export const TextInput = styled.p``;
