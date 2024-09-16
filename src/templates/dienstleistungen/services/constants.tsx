@@ -118,7 +118,7 @@ export default {
           "Kreative Wand- und Deckengestaltung: Schaffung einzigartiger Wand- und Deckengestaltungen durch kreative Kombinationen von Stuck und Farbe.",
         ],
         img: {
-          src: "imgs/udienstleistungen/servicesder/stuckarbeiten.png",
+          src: "imgs/dienstleistungen/services/stuckarbeiten.png",
           alt: "img5",
         },
       },
