@@ -29,7 +29,7 @@ export default {
     name: "Ion Comârlâu",
     position: "Eigentümer",
     signature: {
-      src: "imgs/uber-uns/history/signatures.png",
+      src: "imgs/uber-uns/history/sign.png",
       alt: "Ion Comârlâu",
     },
   },
