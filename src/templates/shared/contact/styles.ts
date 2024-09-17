@@ -63,6 +63,10 @@ export const Content = styled.div`
   svg path {
     fill: ${({ theme }) => theme.carnelian};
   }
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+  `}
 `;
 
 export const Title = styled.h2`
@@ -81,24 +85,33 @@ export const ShowImage = styled.div`
 `;
 
 export const Image = styled(LazyImage)`
-  width: 100%;
+  width: 41.1rem;
+  height: 24.5rem;
+  object-fit: cover;
+
+  ${mediaMaxWidth("mobile")`
+    width: 100%;
+    height: 100%;
+  `}
 `;
 
 export const Certificate = styled.div`
   position: absolute;
-  right: -3rem;
+  right: 0rem;
   top: 50%;
   transform: translate(0%, -50%);
 
   ${mediaMaxWidth("mobile")`
-    top: 75%;
-    right: -1rem;
+    top: 72%;
+    right: -1.4rem;
   `}
 `;
 
 export const CertificateImage = styled(LazyImage)`
   height: 9.2rem;
   object-fit: cover;
+  background: white;
+  border-radius: 50%;
 `;
 
 export const Text = styled.p`
@@ -115,11 +128,11 @@ export const Info = styled.div`
 `;
 
 export const Mail = styled(_Mail)`
-  color: ${({ theme }) => theme.carnelian};
+  color: ${({ theme }) => theme.smokyBlack};
 `;
 
 export const Phone = styled(_Phone)`
-  color: ${({ theme }) => theme.carnelian};
+  color: ${({ theme }) => theme.smokyBlack};
 `;
 
 export const Clients = styled.div`
@@ -140,7 +153,7 @@ export const Client = styled(LazyImage)`
 `;
 
 export const Form = styled.form`
-  width: 40rem;
+  width: 52rem;
   padding: 3.2rem 2.2rem;
   background: ${({ theme }) => theme.white};
   border-radius: 0.4rem;

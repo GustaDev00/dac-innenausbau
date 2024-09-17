@@ -26,6 +26,22 @@ export default {
     ),
     items: [
       {
+        src: "imgs/uber-uns/gallery/slider/new1.jpg",
+        alt: "img1 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/new2.jpg",
+        alt: "img1 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/new3.jpg",
+        alt: "img1 - png",
+      },
+      {
+        src: "imgs/uber-uns/gallery/slider/new4.jpg",
+        alt: "img1 - png",
+      },
+      {
         src: "imgs/uber-uns/gallery/slider/1.png",
         alt: "img1 - png",
       },
@@ -56,10 +72,6 @@ export default {
       {
         src: "imgs/uber-uns/gallery/slider/bodenlegen.png",
         alt: "img4",
-      },
-      {
-        src: "imgs/uber-uns/gallery/slider/stuckarbeiten.jpg",
-        alt: "img5",
       },
     ],
   },

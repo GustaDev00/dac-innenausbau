@@ -50,7 +50,7 @@ export const Article = styled.article`
 export const Icon = styled(Ping)``;
 
 export const Title = styled.h2`
-  color: ${({ theme }) => theme.red};
+  color: ${({ theme }) => theme.ghostWhite};
   text-align: center;
   font-size: 4.8rem;
   font-weight: 700;

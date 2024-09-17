@@ -16,6 +16,8 @@ export default () => {
     const text = sectionRef.current.querySelector("p");
     const clients = sectionRef.current.querySelectorAll(".styles__Client-sc-d26c2bdf-13");
 
+    console.log(certificateImage);
+
     let scrollTriggerConfig = {
       trigger: sectionRef.current,
       start: "top+=200px bottom",
@@ -43,8 +45,8 @@ export default () => {
       .fromTo(image, { scale: 1.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 2 }, "<")
       .fromTo(
         certificateImage,
-        { scale: 1.2, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1 },
+        { scale: 1.4, opacity: 0, y: 50 },
+        { scale: 1, opacity: 1, y: 0, duration: 3 },
         "<",
       )
       .fromTo(text, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 }, "<");

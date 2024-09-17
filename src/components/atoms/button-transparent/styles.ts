@@ -1,4 +1,5 @@
 import { MediumArrowRight } from "@/components/svgs/medium-arrow-right";
+import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const Button = styled.a`
@@ -39,12 +40,18 @@ export const Text = styled.span`
 `;
 
 export const Icon = styled(MediumArrowRight)`
-  width: 1.8rem;
   position: absolute;
   right: 2.8rem;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease;
+  width: 1.8rem;
+  height: 1.8rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 2rem;
+    height: 2rem;
+  `}
 
   path {
     fill: ${({ theme }) => theme.raisinBlackHalf};

@@ -43,20 +43,17 @@ export const Tag = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.4rem;
-  animation: swingTag 4s infinite alternate;
-
-  @keyframes swingTag {
-    to {
-      transform: rotate(-2deg) translateX(5px);
-    }
-
-    from {
-      transform: rotate(2deg) translateX(-5px);
-    }
-  }
 `;
 
-export const Tools = styled(_Tools)``;
+export const Tools = styled(_Tools)`
+  width: 1.8rem;
+  height: 1.8rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 2rem;
+    height: 2rem;
+  `}
+`;
 
 export const TagText = styled.p`
   color: ${({ theme }) => theme.raisinBlackHalf};
@@ -102,7 +99,7 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: flex-end;
-  gap: 6rem;
+  gap: 3rem;
   margin-bottom: 2rem;
 
   ${mediaMaxWidth("mobile")`
@@ -123,11 +120,12 @@ export const Group = styled.div`
 `;
 
 export const Img1 = styled(LazyImage)`
+  width: 30.2rem;
   height: 31.4rem;
   position: relative;
   object-fit: cover;
-  top: -2rem;
-  left: 0rem;
+  top: -1.5rem;
+  left: 1.5rem;
 
   ${mediaMaxWidth("mobile")`
     height: 27rem;
@@ -137,8 +135,8 @@ export const Img1 = styled(LazyImage)`
 `;
 
 export const Shadow = styled.div`
-  width: 27rem;
-  height: 29rem;
+  width: 30rem;
+  height: 31.4rem;
   background: ${({ theme }) => theme.carnelian};
   box-shadow: 0rem 0.4rem 1.2rem 0px ${({ theme }) => theme.black15};
 
@@ -166,25 +164,23 @@ export const TagImg = styled.div`
   border: 1px solid ${({ theme }) => theme.black05};
   background: ${({ theme }) => theme.white};
   box-shadow: 0rem 1.2rem 2.2rem 0rem ${({ theme }) => theme.black12};
-  animation: tagSwing 2s infinite alternate;
 
   ${mediaMaxWidth("mobile")`
     top: unset;
     left: -4.4rem;
     bottom: 1.8rem;
   `}
-
-  @keyframes tagSwing {
-    to {
-      transform: translateX(-2px);
-    }
-    from {
-      transform: translateX(2px);
-    }
-  }
 `;
 
-export const Check = styled(CheckCircle)``;
+export const Check = styled(CheckCircle)`
+  width: 1.8rem;
+  height: 1.8rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 2rem;
+    height: 2rem;
+  `}
+`;
 
 export const TagImgText = styled.p`
   color: ${({ theme }) => theme.raisinBlack};
@@ -195,10 +191,12 @@ export const TagImgText = styled.p`
 `;
 
 export const Img2 = styled(LazyImage)`
+  height: 24.3rem;
+  object-fit: cover;
+
   ${mediaMaxWidth("mobile")`
     width: 14rem;
     height: 19.6rem;
-    object-fit: cover;
     position: absolute;
     top: 1.6rem;
     right: 0;

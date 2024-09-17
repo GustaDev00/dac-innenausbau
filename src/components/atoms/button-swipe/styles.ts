@@ -1,4 +1,5 @@
 import { LongArrowRight } from "@/components/svgs/long-arrow-right";
+import { mediaMaxWidth } from "@/utils/media-query";
 import styled, { css } from "styled-components";
 
 const swipeStyles = css`
@@ -30,4 +31,12 @@ export const LinkSwipe = styled.a`
   ${swipeStyles}
 `;
 
-export const Icon = styled(LongArrowRight)``;
+export const Icon = styled(LongArrowRight)`
+  width: 1.8rem;
+  height: 1.8rem;
+
+  ${mediaMaxWidth("mobile")`
+    width: 2rem;
+    height: 2rem;
+  `}
+`;

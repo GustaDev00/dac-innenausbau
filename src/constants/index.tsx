@@ -27,9 +27,9 @@ export default {
   ),
   categories: [
     { title: "Home", href: "/" },
-    { title: "Dienstleistungen", href: "/dienstleistungen/" },
-    { title: "Über uns", href: "/uber-uns/" },
-    { title: "Kontakt", href: "/kontakt/" },
+    { title: "Dienstleistungen", href: "/dienstleistungen" },
+    { title: "Über uns", href: "/uber-uns" },
+    { title: "Kontakt", href: "/kontakt" },
   ],
   services: [
     {

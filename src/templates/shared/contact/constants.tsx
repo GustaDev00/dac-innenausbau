@@ -20,7 +20,7 @@ export default {
       },
     },
     Certificate: {
-      src: "imgs/contact/quality.png",
+      src: "imgs/contact/quality1.png",
       alt: "Qualität",
     },
     text: (
@@ -31,11 +31,11 @@ export default {
     ),
     clients: [
       {
-        src: "imgs/contact/implenia.png",
+        src: "imgs/contact/implenia1.jpg",
         alt: "implenia",
       },
       {
-        src: "imgs/contact/gipser.png",
+        src: "imgs/contact/gipser1.png",
         alt: "gipser",
       },
     ],
@@ -46,7 +46,7 @@ export default {
       label: "Name",
       type: "text",
       name: "name",
-      placeholder: "Ex: z.B. Jonn Wyss",
+      placeholder: "z.B. Jonn Wyss",
     },
     {
       label: "Nummer",

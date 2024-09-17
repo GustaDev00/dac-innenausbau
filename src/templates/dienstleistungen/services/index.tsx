@@ -31,7 +31,20 @@ export default () => {
                   <S.ButtonMenu
                     onClick={() => {
                       setActiveService(id);
-                      servicesListRef.current?.scrollIntoView({ behavior: "smooth" });
+
+                      const offset = 50;
+                      const element = servicesListRef.current;
+
+                      if (element) {
+                        const elementPosition =
+                          element.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - offset;
+
+                        window.scrollTo({
+                          top: offsetPosition,
+                          behavior: "smooth",
+                        });
+                      }
                     }}
                     $active={id === activeService}
                   >
@@ -108,7 +121,7 @@ export default () => {
         <ResponsiveElement
           breakpoints={{ mobile: <></> }}
           content={
-            <S.Content ref={servicesListRef}>
+            <S.Content>
               <S.ServicesList data-timeline="services">
                 {C.content.items.map(({ id, title, list, img }) => (
                   <S.Service key={id} $active={id === activeService}>

@@ -21,9 +21,6 @@ export default () => {
             breakpoints={{ mobile: <GalleryMobile /> }}
             content={<GalleryDesktop />}
           />
-          <S.TextSlider>
-            <S.Text>Alles ist machbar.</S.Text>
-          </S.TextSlider>
         </S.SliderList>
       </S.Wrapper>
     </S.Gallery>

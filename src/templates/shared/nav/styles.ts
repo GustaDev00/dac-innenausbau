@@ -38,7 +38,7 @@ const FlexCenterSpaceBetween = css`
 export const Header = styled.header`
   background: ${({ theme }) => theme.white};
   position: relative;
-  margin-bottom: 5.4rem;
+  margin-bottom: 5.2rem;
   z-index: 10;
 
   ${mediaMaxWidth("mobile")`

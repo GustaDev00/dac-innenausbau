@@ -100,6 +100,13 @@ export const Item = styled.li`
     position: relative;
     top: 0.3rem;
     margin: 0 0.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+
+    ${mediaMaxWidth("mobile")`
+    width: 2rem;
+    height: 2rem;
+  `}
   }
 
   a:hover {
