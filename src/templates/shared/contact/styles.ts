@@ -267,7 +267,7 @@ export const ProgressBarModal = styled(ProgressBar)`
   position: relative;
   top: -0.03rem;
   height: 0.14rem;
-  width: 98%;
+  width: 96%;
   margin: auto;
   border-radius: 50rem;
 
@@ -276,7 +276,6 @@ export const ProgressBarModal = styled(ProgressBar)`
   }
 
   ${mediaMaxWidth("mobile")`
-    width: 96%;
     height: 0.18rem;
     top: -0.04rem;
   `}
