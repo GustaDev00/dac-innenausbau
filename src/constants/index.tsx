@@ -1,6 +1,5 @@
 import { Facebook } from "@/components/svgs/facebook";
 import { Instagram } from "@/components/svgs/instagram";
-import { title } from "process";
 
 export default {
   phone: "076 469 28 31",

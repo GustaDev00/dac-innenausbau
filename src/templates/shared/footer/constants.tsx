@@ -1,5 +1,3 @@
-import { Facebook } from "@/components/svgs/facebook";
-import { Instagram } from "@/components/svgs/instagram";
 import C from "@/constants";
 
 export default {

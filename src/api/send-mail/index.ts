@@ -7,8 +7,8 @@ export const sendMail = async (request: SendMailRequest): Promise<void> => {
     project: "dac-innenausbau-xi.vercel.app",
     attrs: [
       { content: request.name, field: 9 },
-      { content: request.email, field: 10 },
-      { content: request.phone, field: 11 },
+      { content: request.email, field: 11 },
+      { content: request.phone, field: 10 },
       { content: request.message, field: 12 },
     ],
     is_alemao: true,
@@ -18,7 +18,7 @@ export const sendMail = async (request: SendMailRequest): Promise<void> => {
     headers: { "Content-Type": "application/json" },
   });
 
-  if (data.success === 1) {
+  if (data.id) {
     return Promise.resolve();
   }
 

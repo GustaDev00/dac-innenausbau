@@ -9,7 +9,7 @@ export default () => {
     <S.History ref={sectionRef}>
       <S.Wrapper>
         <S.Container data-timline="img-author">
-          <S.Img {...C.img} />
+          <S.Img {...C.img} notLazy={true} />
         </S.Container>
         <S.Content>
           <S.Title>{C.title}</S.Title>
