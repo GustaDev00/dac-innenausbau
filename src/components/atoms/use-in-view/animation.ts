@@ -16,7 +16,7 @@ export default () => {
       onLeave: () => setIsInView(false),
       onEnterBack: () => setIsInView(true),
       onLeaveBack: () => setIsInView(false),
-      markers: true,
+      markers: false,
     });
   }, []);
 
