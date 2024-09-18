@@ -10,13 +10,13 @@ export default () => {
 
     ScrollTrigger.create({
       trigger: element,
-      start: "top center+=260px",
+      start: "top center+=280px",
       end: "bottom top+=60px",
       onEnter: () => setIsInView(true),
       onLeave: () => setIsInView(false),
       onEnterBack: () => setIsInView(true),
       onLeaveBack: () => setIsInView(false),
-      markers: false,
+      markers: true,
     });
   }, []);
 

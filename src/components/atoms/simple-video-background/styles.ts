@@ -1,3 +1,4 @@
+import { mediaMaxWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const LocalVideo = styled.div`
@@ -6,7 +7,11 @@ export const LocalVideo = styled.div`
   height: 100%;
 `;
 
-export const Video = styled.video``;
+export const Video = styled.video`
+  ${mediaMaxWidth("mobile")`
+    object-position: 30%;
+  `}
+`;
 
 export const FallbackImage = styled.div``;
 

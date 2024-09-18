@@ -11,7 +11,7 @@ import { useState } from "react";
 export default () => {
   const { sectionRef } = useAnimation();
   const [isModalOpen, setIsModalOpen] = useState({
-    isActive: true,
+    isActive: false,
     send: true,
     title: <>Nachricht gesendet</>,
     text: (

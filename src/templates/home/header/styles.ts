@@ -6,7 +6,7 @@ import { mediaMaxWidth } from "@/utils/media-query";
 
 export const Header = styled.section`
   position: relative;
-  background: url("./videos/thumb.png") no-repeat center center;
+  background: url("./videos/thumb1.png") no-repeat center center;
   background-size: cover;
   overflow: hidden;
 `;
